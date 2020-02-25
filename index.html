@@ -15,7 +15,7 @@ Talkie</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="keywords" content="Talkie">
-<meta name="description" content="Real estate and soccer forum for Vietnamese">
+<meta name="description" content="Vietnamese Question and Anwser platform">
 <style>
 body {background-color:#ffffff;background-repeat:no-repeat;background-position:top left;background-attachment:fixed;}
 h1{font-family:Arial, sans-serif;color:#4be97e;background-color:#ffffff;}
@@ -247,5 +247,36 @@ week: "tuần"
 
 
 });</script>
+  
+  <script type="text/javascript">
+      /* Load remote Batch SDK JavaScript code */
+(function(b,a,t,c,h,e,r){h='batchSDK';b[h]=b[h]||function() {
+    (b[h].q=b[h].q||[]).push(arguments)};e=a.createElement(t),r=a.getElementsByTagName(t)[0];
+    e.async=1;e.src=c;r.parentNode.insertBefore(e,r);})(window,document,'script','https://via.batch.com/v2/bootstrap.min.js');
+
+/* Initiate Batch SDK opt-in UI configuration (native prompt) */
+var batchSDKUIConfig = {
+    native: {}
+};
+
+/* Use a specific configuration for the Firefox web browser (custom prompt) */
+if (navigator.userAgent.indexOf("Firefox") !== -1) {
+    batchSDKUIConfig = {
+        alert: {
+            icon: 'https://secure.url.to.your.icon.jpg'
+        }
+    }
+}
+
+/* Finalize the Batch SDK setup */
+batchSDK('setup', {
+    apiKey: '71561EE8F66F44C3A43AE9ECABED765F',
+    subdomain: 'talkie',
+    authKey: '2.QXVFf4xAY8hABgzMvBbqkgd2OTHLRwaADPK3mC3sKlg=',
+    dev: true, // remove this for prod
+    vapidPublicKey: 'BEQWhnKyjqvGCNJzwWo6eAMrOOhY5pl6uo4KWMQTLJrJptrOihzJvDLvbz1dHg4PkKX4VoewakS5IeEKp0VGsMk=',
+    ui: batchSDKUIConfig,
+});
+</script>
 </body>
 </html>
