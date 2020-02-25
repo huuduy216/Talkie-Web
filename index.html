@@ -16,14 +16,54 @@ Talkie</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="keywords" content="Talkie">
 <meta name="description" content="Vietnamese Question and Anwser platform">
-<style>
-  .m-image.m-thump image{width: 100%;}
-body {background-color:#ffffff;background-repeat:no-repeat;background-position:top left;background-attachment:fixed;}
-h1{font-family:Arial, sans-serif;color:#4be97e;background-color:#ffffff;}
-p {font-family:Georgia, serif;font-size:14px;font-style:normal;font-weight:normal;color:#ff0000;background-color:#ffffff;}
-</style>
 <link rel="stylesheet" href="https://cdn.muut.com/1/moot.css" />
-<link rel="stylesheet" href="https://cdn.muut.com/1/plugin/thumb.css" />
+<style>
+    
+.m-thumb {
+   display: inline-block;
+   vertical-align: middle;
+   margin-right: .3em;
+}
+
+.m-thumb img {
+   -webkit-filter: grayscale(1);
+   -moz-filter: grayscale(1);
+   filter: gray;
+   width: 100%;
+   opacity: 0.5;
+}
+
+.m-thumb:before {
+   display:none;
+}
+
+.m-thumb:hover img {
+   -webkit-filter: none;
+   -moz-filter: none;
+   filter: none;
+   opacity: 1;
+}
+body {
+	background-color: #ffffff;
+	background-repeat: no-repeat;
+	background-position: top left;
+	background-attachment: fixed;
+}
+h1 {
+	font-family: Arial, sans-serif;
+	color: #4be97e;
+	background-color: #ffffff;
+}
+p {
+	font-family: Georgia, serif;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: normal;
+	color: #ff0000;
+	background-color: #ffffff;
+}
+
+</style>
 </head>
 <body>
 <a class="muut" href="https://muut.com/i/talkie" data-upload="true">talkie</a>
