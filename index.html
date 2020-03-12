@@ -1,248 +1,351 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-EZ07XLCGP9"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Global site tag (gtag.js) - Google Analytics, Google Ads -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EZ07XLCGP9"></script>
+  <script data-ad-client="ca-pub-7324694294872308" async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-  gtag('config', 'G-EZ07XLCGP9');
-</script>
-<title>
-Milan sucks</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="keywords" content="Milan Sucks">
-<meta name="description" content="What?">
-<style>
-body {background-color:#ffffff;background-repeat:no-repeat;background-position:top left;background-attachment:fixed;}
-h1{font-family:Arial, sans-serif;color:#4be97e;background-color:#ffffff;}
-p {font-family:Georgia, serif;font-size:14px;font-style:normal;font-weight:normal;color:#ff0000;background-color:#ffffff;}
-</style>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    gtag('config', 'G-EZ07XLCGP9');
+  </script>
+  <title>
+    Talkie</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords"
+    content="Talkie.vn. Forum thảo luận chuyên sâu chuyên nghiệp dành cho người Việt. Nơi tập trung những cuộc thảo luận mang tính chuyên môn cao cho mọi người.">
+  <meta name="description"
+    content="Vietnamese Question and Anwser platform. Talkie.vn. Forum thảo luận chuyên sâu chuyên nghiệp dành cho người Việt. Nơi tập trung những cuộc thảo luận mang tính chuyên môn cao cho mọi người.">
+  <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js"></script>
+  <script>
+    var OneSignal = window.OneSignal || [];
+    OneSignal.push(function () {
+      OneSignal.init({
+        appId: "715e6db0-893e-4bcc-a6bc-3a37693ad781",
+      });
+    });
+  </script>
+  <style>
+	.m-thumb {
+		display: inline-block;
+		vertical-align: middle;
+		margin-right: .3em;
+	}
+
+	.m-thumb img {
+		-webkit-filter: grayscale(1);
+		-moz-filter: grayscale(1);
+		filter: gray;
+		width:75%;
+		height:75%;
+		opacity: 0.5;
+	}
+
+	.m-thumb:before {
+		display:none;
+	}
+
+	.m-thumb:hover img {
+		-webkit-filter: none;
+		-moz-filter: none;
+		filter: none;
+		opacity: 1;
+	}
+	  
+	.muut {
+		z-index:1;	
+	}
+	 
+	.muut-messaging {
+		z-index:1;
+	}
+	  
+	#moot-logo a{
+		visibility: hidden;
+		display:inline-block;
+		position:relative;
+		z-index:999
+	}
+	 
+	.m-sidebar {
+		margin-left:0;
+	}
+    .onesignal-customlink-container {
+		visibility: hidden;
+		background: #fff;
+		width: 100%;
+		height: auto;
+		justify-content: center;
+		display: flex;
+		position: fixed;
+		bottom: 0vh;
+		z-index: 10000;
+    }
+	 
+	.onesignal-customlink-container .button{
+		flex-direction: column;
+		justify-content: center;
+		height: 75%;
+		margin: auto 0vh;
+		font-size: calc(12px + (26 - 12) * ((100vw - 300px) / (2880 - 300))) !important;
+	}
+
+    .onesignal-customlink-container .onesignal-customlink-explanation.large {
+		font-size: calc(12px + (26 - 12) * ((100vw - 300px) / (2880 - 300))) !important;
+		text-align: center;
+		
+		margin: auto 0vh;
+		color: #9e8189 !important;
+    }
+	  html, body {
+		  height: 100%;
+		  min-height: 100%;
+	  }
+	
+  </style>
+	
 </head>
+
 <body>
-<a class="muut" href="https://muut.com/i/talkie">talkie</a>
-<script src="https://cdn.muut.com/1/moot.min.js"></script>
-<script>$.extend(moot.language, {
-no_notify: "Tắt thông báo qua Email",
-watchall: "Theo dõi các chủ để mới",
-move: "Chuyển bài",
-moved: "Đã chuyển bài",
-custom_path1: "Custom path",
-custom_path: "Enter custom path",
-invalid_path: "Invalid custom path",
-from: "Từ",
-to: "Đến",
-show_preview: "Xem trước",
-retire: "Retire",
-retire_title: "Retire thread",
-retire_desc: "Retired threads no longer get bumped to top in the feeds they appear in.",
-retired_desc: "This thread is retired. New replies no longer bump it to the top of the feed.",
-is_retired: "This thread has been retired",
-unretire: "Unretire",
-unretire_title: "Unretire thread",
-unretire_desc: "This thread will be bumped to top in the feeds they appear in.",
-quote_help1: "Chọn",
-quote_help2: "trích dẫn hoặc chia sẻ",
-trial_left: "còn lại cho gói miễn phí",
-after_trial: "Sau khi gói thử nghiệm hết hạn, tài khoản sẽ chuyển qua gói",
-free_plan: "Gói miễn phí",
-reward: "Điểm giới thiệu",
-off33: "Nâng cấp ngay để nhận được mã giảm lên tới 33% cho những gói khác!",
-spread: "Hãy chia sẻ với bạn bè!",
-invite: "Hãy mời bạn bè và tạo cộng đồng trên Talkie để nhận thưởng ngay!",
-start_now: "Hãy tạo cộng đồng theo sở thích của bạn!",
-start_btn: "Tạo",
-reserve: "Đặt trước tên kênh",
-free_acc: "Tài khoản miễn phí",
-no_dialog: "và xóa hội thoại",
-click_change: "Bấm để thay đổi",
-moderator: "Điều hành viên",
-mkadmin: "Bổ nhiệm lên quản trị viên",
-mkmod: "Bổ nhiệm lên điều hành viên",
-upgrade_mod: "Bổ nhiệm lên điều hành viên",
-upgrade_admin: "Bổ nhiệm lên quản trị viên hoặc điều hành viên",
-my_profile: "Trang cá nhân",
-post_in: "Nhắn tin",
-address_now: "Cảm ơn bạn! Email của bạn đã được xác nhận",
-open_pw: "Vui lòng nhấn nút ở dưới để mở hộp thoại mật khẩu",
-non_anon: "Bạn phải đăng nhập để thực hiện hành động này",
-plan: "Gói",
-trial: "Bắt đầu với gói thử nghiệm miễn phí",
-is_private: "Cộng đồng này được mở ở chế độ riêng tư",
-owner_msg: "Lời nhắn cho người sáng lập... (không bắt buộc)",
-req_access: "Yêu cầu quyền truy cập",
-req_sent: "Yêu cầu đã được gửi đi",
-or_join: "hoặc <a>tham gia</a> để truy cập cộng đồng này",
-save_with: "Giảm 20% khi đăng ký một năm",
-rem_post: "Bạn muốn xóa bài?",
-is_spam: "Bài này là Spam?",
-channels: "Kênh",
-ch_name: "Tiêu đề kênh",
-ban: "Báo xấu",
-banned: "Khóa",
-ban_acc: "Tài khoản đã bị khóa",
-ban_msg: "Tài khoản của bạn đã tạm thời bị khóa",
-days: "Ngày",
-forever: "Mãi mãi",
-slogan: "Talkie – nơi tập hợp của các cộng đồng yêu thích của bạn!",
-add: "+ thêm",
-addons: "thêm",
-myaccount: "Tài Khoản",
-untitled: "Không tiêu đề",
-design: "Thiết kế",
-no_title: "Vui lòng nhập chủ đề",
-designer: "Người thiết kế",
-developer: "Người phát triển",
+	<div class='onesignal-customlink-container'></div>
+	<a class="muut" href="/i/talkie" data-upload="true">talkie</a>
+	<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script src="https://cdn.muut.com/1/moot.min.js"></script>
+	<script src="https://cdn.muut.com/1/plugin/thumb.js"></script>
+	<script>$.extend(moot.language, {
+      no_notify: "Tắt thông báo qua Email",
+      watchall: "Theo dõi các chủ để mới",
+      move: "Chuyển bài",
+      moved: "Đã chuyển bài",
+      custom_path1: "Custom path",
+      custom_path: "Enter custom path",
+      invalid_path: "Invalid custom path",
+      from: "Từ",
+      to: "Đến",
+      show_preview: "Xem trước",
+      retire: "Retire",
+      retire_title: "Đóng chủ đề",
+      retire_desc: "Retired threads no longer get bumped to top in the feeds they appear in.",
+      retired_desc: "This thread is retired. New replies no longer bump it to the top of the feed.",
+      is_retired: "This thread has been retired",
+      unretire: "Unretire",
+      unretire_title: "Unretire thread",
+      unretire_desc: "This thread will be bumped to top in the feeds they appear in.",
+      quote_help1: "Chọn",
+      quote_help2: "trích dẫn hoặc chia sẻ",
+      trial_left: "còn lại cho gói miễn phí",
+      after_trial: "Sau khi gói thử nghiệm hết hạn, tài khoản sẽ chuyển qua gói",
+      free_plan: "Gói miễn phí",
+      reward: "Điểm giới thiệu",
+      off33: "Nâng cấp ngay để nhận được mã giảm lên tới 33% cho những gói khác!",
+      spread: "Hãy chia sẻ với bạn bè!",
+      invite: "Hãy mời bạn bè và tạo cộng đồng trên Talkie để nhận thưởng ngay!",
+      start_now: "Hãy tạo cộng đồng theo sở thích của bạn!",
+      start_btn: "Tạo",
+      reserve: "Đặt trước tên kênh",
+      free_acc: "Tài khoản miễn phí",
+      no_dialog: "và xóa hội thoại",
+      click_change: "Bấm để thay đổi",
+      moderator: "Điều hành viên",
+      mkadmin: "Bổ nhiệm lên quản trị viên",
+      mkmod: "Bổ nhiệm lên điều hành viên",
+      upgrade_mod: "Bổ nhiệm lên điều hành viên",
+      upgrade_admin: "Bổ nhiệm lên quản trị viên hoặc điều hành viên",
+      my_profile: "Trang cá nhân",
+      post_in: "Nhắn tin",
+      address_now: "Cảm ơn bạn! Email của bạn đã được xác nhận",
+      open_pw: "Vui lòng nhấn nút ở dưới để mở hộp thoại mật khẩu",
+      non_anon: "Bạn phải đăng nhập để thực hiện hành động này",
+      trial: "Bắt đầu với gói thử nghiệm miễn phí",
+      is_private: "Cộng đồng này được mở ở chế độ riêng tư",
+      owner_msg: "Lời nhắn cho người sáng lập... (không bắt buộc)",
+      req_access: "Yêu cầu quyền truy cập",
+      req_sent: "Yêu cầu đã được gửi đi",
+      or_join: "hoặc <a>tham gia</a> để truy cập cộng đồng này",
+      rem_post: "Bạn muốn xóa bài?",
+      is_spam: "Bài này là Spam?",
+      channels: "Kênh",
+      ch_name: "Tiêu đề kênh",
+      ban: "Báo xấu",
+      banned: "Khóa",
+      ban_acc: "Tài khoản đã bị khóa",
+      ban_msg: "Tài khoản của bạn đã tạm thời bị khóa",
+      days: "Ngày",
+      forever: "Mãi mãi",
+      slogan: "Talkie – nơi tập hợp của các cộng đồng yêu thích của bạn!",
+      add: "+ thêm",
+      addons: "thêm",
+      myaccount: "Tài Khoản",
+      untitled: "Không tiêu đề",
+      design: "Thiết kế",
+      no_title: "Vui lòng nhập chủ đề",
+      designer: "Người thiết kế",
+      developer: "Người phát triển",
 
-warning: "Cảnh báo",
-profanity: "Ngôn ngữ thô tục không được chấp nhận trên Talkie. Lạm dụng hành vi này sẽ dẫn đến tài khoản của bạn bị khóa.", 
+      warning: "Cảnh báo",
+      profanity: "Ngôn ngữ thô tục không được chấp nhận trên Talkie. Lạm dụng hành vi này sẽ dẫn đến tài khoản của bạn bị khóa.",
 
-img_needed: "Vui lòng đăng tải file hình",
-max: "4Mb là dung lượng tối đa",
-yes: "Có",
-upload: "ages",
-show: "Hiển thị",
-hide: "ẩn",
-invisible: "Invisible",
-givebody: "Vui lòng nhập nội dung.",
-show_old: "Hiển thị câu trả lời cũ",
-show_more: "Hiển thị thêm câu trả lời",
-show_new: "Hiển thị câu trả lời mới nhất",
-start: "Đăng bài",
-error: "Rất tiếc đã xảy ra lỗi, vui lòng lưu lại bài viết ở nơi khác và tải lại trang để đăng lại. Chúng tôi sẽ sớm khắc phục lỗi này.",
-body: "Nội dung",
-admin: "Quản trị viên",
-someone: "người dùng khác",
-title: "Chủ đề",
-writing: "đang viết...",
-manage: "Quản Lý",
-fullview: "Giao diện đầy đủ",
-link: "link",
-avatar: "Thay đổi hình đại diện",
+      img_needed: "Vui lòng đăng tải file hình",
+      max: "4Mb là dung lượng tối đa",
+      yes: "Có",
+      upload: "Đăng ảnh",
+      show: "Online",
+      hide: "Ẩn",
+      invisible: "Ẩn danh",
+      givebody: "Vui lòng nhập nội dung.",
+      show_old: "Hiển thị câu trả lời cũ",
+      show_more: "Hiển thị thêm câu trả lời",
+      show_new: "Hiển thị câu trả lời mới nhất",
+      start: "Đăng bài",
+      error: "Rất tiếc đã xảy ra lỗi, vui lòng lưu lại bài viết ở nơi khác và tải lại trang để đăng lại. Chúng tôi sẽ sớm khắc phục lỗi này.",
+      body: "Nội dung",
+      admin: "Quản trị viên",
+      someone: "người dùng khác",
+      title: "Chủ đề",
+      writing: "đang viết...",
+      manage: "Quản Lý",
+      fullview: "Giao diện đầy đủ",
+      link: "link",
+      avatar: "Thay đổi hình đại diện",
 
-upgrade_link: "Nâng cấp",
-branding: "Xây dựng trang cá nhân",
-logo: "Logo",
+      upgrade_link: "Nâng cấp",
+      branding: "Xây dựng trang cá nhân",
+      logo: "Logo",
 
-title: "Chủ đề",
-css: "file CSS",
+      title: "Chủ đề",
+      css: "file CSS",
 
-single: "Từ đơn",
+      single: "Từ đơn",
 
-username_fail: "Bạn hãy xài chữ hoặc số",
-bold: "In đậm",
-italics: "In nghiêng",
-monospaced: "đã được đơn cách",
+      username_fail: "Bạn hãy xài chữ hoặc số",
+      bold: "In đậm",
+      italics: "In nghiêng",
+      monospaced: "đã được đơn cách",
 
-settings: "Cài đặt",
+      settings: "Cài đặt",
 
-all: "Tất cả bài",
-anon_1: "ẩn danh",
-anon: "ẩn danh",
+      all: "Tất cả bài",
+      anon_1: "ẩn danh",
+      anon: "ẩn danh",
 
-badforum: "Diễn đàn không hợp lệ",
-c_acc1: "Tài khoản của bạn có thể sử dụng được trên tất cả các kênh của Talkie",
-c_acc: "Tài khoản của bạn đã được xác nhận",
-c_email: "Bạn đã cập nhật Email thành công",
-cancel: "Hủy",
-change: "Thay đổi",
-changepw: "Thay đổi mật khẩu",
-close: "Đóng",
-collapse: "Đóng hết",
-comm_count_1: "Bình luận", 
-comm_count_n: "Bình luận",
-comment1: "Hãy là người bình luần đầu tiên ...",
-comment: "Bình luận",
-edit: "Chỉnh sửa",
-email: "Email",
-email_taken: "Email đã được sử dụng",
-emailtip: "Email của bạn được bảo mật",
-enter: "ctrl + enter",
-expired1: "Chúng tôi vừa gửi lại cho bạn, vui lòng kiểm tra lại email.",
-expired: "Đường link không còn tồn tại…",
-feed: "Kênh của tôi",
-help2: "bài viết",
-help3: "trích dẫn",
-help5: "code, phát hiện ngôn ngữ",
-help6: "HTML code",
-in_forum: "trong",
-invalid: "Ký tự không hợp lệ",
-join: "Hãy tham gia với Talkie!",
+      badforum: "Diễn đàn không hợp lệ",
+      c_acc1: "Tài khoản của bạn có thể sử dụng được trên tất cả các kênh của Talkie",
+      c_acc: "Tài khoản của bạn đã được xác nhận",
+      c_email: "Bạn đã cập nhật Email thành công",
+      cancel: "Hủy",
+      change: "Thay đổi",
+      changepw: "Thay đổi mật khẩu",
+      close: "Đóng",
+      collapse: "Đóng hết",
+      comm_count_1: "Bình luận",
+      comm_count_n: "Bình luận",
+      comment1: "Hãy là người bình luần đầu tiên ...",
+      comment: "Bình luận",
+      edit: "Chỉnh sửa",
+      email: "Email",
+      email_taken: "Email đã được sử dụng",
+      emailtip: "Email của bạn được bảo mật",
+      enter: "ctrl + enter",
+      expired1: "Chúng tôi vừa gửi lại cho bạn, vui lòng kiểm tra lại email.",
+      expired: "Đường link không còn tồn tại…",
+      feed: "Kênh của tôi",
+      help2: "bài viết",
+      help3: "trích dẫn",
+      help5: "code, phát hiện ngôn ngữ",
+      help6: "HTML code",
+      in_forum: "trong",
+      invalid: "Ký tự không hợp lệ",
+      join: "Gia nhập Talkie!",
 
-later: "Sau...",
-less: "giảm",
-like: "Like",
-likepost: "Like bài này",
-loading: "Đang tải...",
-login: "Đăng nhập",
-login1: "Vui lòng đăng nhập trước",
-login_and: "Vui lòng đăng nhập và",
-logout: "Đăng xuất",
-mark: "Báo cáo bài viết",
-mean: "Ý bạn là….",
-name: "Tên hiển thị",
-nametip: "Để nhận diện dễ dàng hơn, vui lòng nhập tên cá nhân của bạn",
+      later: "Sau...",
+      less: "",
+      like: "Like",
+      likepost: "Like bài này",
+      loading: "Đang tải...",
+      login: "Đăng nhập",
+      login1: "Vui lòng đăng nhập trước",
+      login_and: "Đăng nhập và",
+      logout: "Đăng xuất",
+      mark: "Báo cáo bài viết",
+      mean: "Ý bạn là….",
+      name: "Tên hiển thị",
+      nametip: "Để nhận diện dễ dàng hơn, hãy nhập tên cá nhân của bạn",
 
-newpass: "Mật khẩu mới",
-noresults: "Không tìm được kết quả",
-nospam: "Vui lòng không Spam!",
-notexist: "không tồn tại.",
-ok: "ok",
-online: "Trực tuyến",
-post: "Đăng tin",
-preview: "Xem trước",
-progress: ["Đang tải….", "Vẫn đang tải...", "Vẫn đang tải...", "Không kết nối được"],
-reconnect: "Đang kết nối lại…",
-removepost: "Xóa",
-reply: "Trả lời...",
-replybtn: "Trả lời",
+      newpass: "Mật khẩu mới",
+      noresults: "Không tìm được kết quả",
+      nospam: "Vui lòng không Spam!",
+      notexist: "không tồn tại.",
+      ok: "ok",
+      online: "Online",
+      post: "Đăng tin",
+      preview: "Xem trước",
+      progress: ["Đang tải….", "Vẫn đang tải...", "Vẫn đang tải...", "Không kết nối được"],
+      reconnect: "Đang kết nối lại…",
+      removepost: "Xóa",
+      reply: "Trả lời...",
+      replybtn: "Trả lời",
 
-saved: "đã lưu",
-search: "Tìm kiếm",
-select: "Chọn kênh",
-setup: "Cài đặt",
-showing: "Đang hiển thị",
+      saved: "đã lưu",
+      search: "Tìm kiếm",
+      select: "Chọn kênh",
+      setup: "Cài đặt",
+      showing: "Đang hiển thị",
 
-spam: "Spam",
-step1: "Chúng tôi đã gửi yêu cầu xác nhận tài khoản qua email của bạn. Hãy xác nhận bước này để hoàn thành việc đăng ký thành viên tại Talkie!",
-step: "Chỉ còn một bước nữa",
-terms: "Tôi đồng ý <a>các điều khoản sử dụng</a>.",
-thanks: "Talkie xin cảm ơn!",
-uname_len: "Vui lòng nhập 3 ký tự trở lên",
-uname_taken: "Tên tài khoản đã được sử dụng!",
-unametip: "Tên đăng nhập sẽ không được thay đổi lại",
-undo: "Hoàn tác",
-unlike: "Unlike",
-unspam: "Không phải spam",
-unver1: "Tài khoản chưa được xác nhận",
-unver2: "Bạn hãy vui lòng kiểm tra email để xác nhận tài khoản",
-unver3: "Gửi lại yêu cầu xác nhận",
-unver4: "Email đã được gửi. Bạn vui lòng kiểm tra hộp thư",
-unver: "Chưa được xác nhận",
-unwall: "Ngưng theo dõi tất cả",
-unwatch: "Ngưng theo dõi",
-upgrade2: "Talkie xài một số ứng dụng để thao tác trang, tất cả trình duyệt mới hơn Opera 11 và IE7 đều sử dụng được.",
-upgrade: "Bạn vui lòng cập nhật trình duyệt",
-username_taken: "Tên tài khoản đã được sử dụng",
-watch: "Theo dõi phản hồi mới",
-welcome1: "Vui lòng kiểm tra email để hoàn thành bước đăng ký. Nếu bạn không nhận được email trong vòng 2 phút vui lòng kiểm tra hộp thư rác.", 
-welcome2: "Vui lòng cung cấp tên đăng nhập Talkie",
-welcome: "Chào mừng tới Talkie!",
-you: "Bạn",
+      spam: "Spam",
+      step1: "Chúng tôi đã gửi yêu cầu xác nhận tài khoản qua email của bạn. Hãy xác nhận bước này để hoàn thành việc đăng ký thành viên tại Talkie!",
+      step: "Chỉ còn một bước nữa",
+      terms: "Tôi đồng ý <a>các điều khoản sử dụng</a>.",
+      thanks: "Talkie xin cảm ơn!",
+      uname_len: "Vui lòng nhập 3 ký tự trở lên",
+      uname_taken: "Tên tài khoản đã được sử dụng!",
+      unametip: "Tên đăng nhập sẽ không được thay đổi lại",
+      undo: "Hủy",
+      unlike: "Unlike",
+      unspam: "Không phải spam",
+      unver1: "Tài khoản chưa được xác nhận",
+      unver2: "Bạn hãy vui lòng kiểm tra email để xác nhận tài khoản",
+      unver3: "Gửi lại yêu cầu xác nhận",
+      unver4: "Email đã được gửi. Bạn vui lòng kiểm tra hộp thư",
+      unver: "Chưa được xác nhận",
+      unwall: "Ngưng theo dõi tất cả",
+      unwatch: "Ngưng theo dõi",
+      upgrade2: "Talkie xài một số ứng dụng để thao tác trang, tất cả trình duyệt mới hơn Opera 11 và IE7 đều sử dụng được.",
+      upgrade: "Bạn vui lòng cập nhật trình duyệt",
+      username_taken: "Tên tài khoản đã được sử dụng",
+      watch: "Theo dõi phản hồi mới",
+      welcome1: "Vui lòng kiểm tra email để hoàn thành bước đăng ký. Nếu bạn không nhận được email trong vòng 2 phút vui lòng kiểm tra hộp thư rác.",
+      welcome2: "Vui lòng cung cấp tên đăng nhập Talkie",
+      welcome: "Chào mừng tới Talkie!",
+      you: "Bạn",
 
-// times
-now: "Mới đây",
-months: "Tháng 1,Tháng 2,Tháng 3,Tháng 4,Tháng 5,Tháng 6,Tháng 7,Tháng 8,Tháng 9,Tháng 10,Tháng 11,Tháng 12",
-min: "phút",
-hour: "giờ",
-day: "ngày",
-week: "tuần"
-
-
-});</script>
+      // times
+      now: "Mới đây",
+      months: "Tháng 1,Tháng 2,Tháng 3,Tháng 4,Tháng 5,Tháng 6,Tháng 7,Tháng 8,Tháng 9,Tháng 10,Tháng 11,Tháng 12",
+      min: " phút trước",
+      hour: " giờ trước",
+      day: " ngày trước",
+      week: " tuần trước"
+    });
+  </script>
+	<script>
+		function handlePrompt() {
+			var userNameElement = document.getElementsByClassName('m-myname');
+			console.log("function called");
+			var userName = userNameElement[0].innerText;
+			var prompt = document.getElementsByClassName('onesignal-customlink-container')[0];
+			if (userName != "") {
+				prompt.style.visibility = "visible";
+			} else {
+				prompt.style.visibility = "hidden";
+			}
+		}
+		setTimeout(function() { handlePrompt(); }, 500);
+	</script>
 </body>
+
 </html>
