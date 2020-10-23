@@ -1,0 +1,35 @@
+{
+    "name": "duyplus/fl-vietnamese",
+    "type": "flarum-extension",
+    "description": "Vietnamese Language Pack for Flarum. Updated by DUYPLUS",
+    "keywords": ["duyplus", "flarum", "vietnamese"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nguyen Hoang Duy",
+            "email": "duyplusdz@gmail.com",
+            "homepage": "https://duyplus.me"
+        }
+    ],
+    "require": {
+        "flarum/core": "^0.1.0-beta.9"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1.x-dev"
+        },
+        "flarum-extension": {
+            "title": "Vietnamese",
+            "icon": {
+                "image": "icon.svg",
+                "backgroundColor": "#00247d",
+                "backgroundSize": "cover",
+                "backgroundPosition": "center"
+            }
+        },
+        "flarum-locale": {
+            "code": "vi",
+            "title": "Vietnamese"
+        }
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "name": "zerosonesfun/hashtags",
+    "description": "Adds hashtagging.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Billy Wilcosky",
+            "role": "Creator"
+        }
+    ],
+    "type": "flarum-extension",
+    "require": {
+        "flarum/core": "^0.1.0-beta.8"
+    },
+    "autoload": {
+        "psr-4": {"ZerosOnesFun\\Hashtags\\": "src/"}
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "Hashtags",
+            "icon": {
+                "name": "fas fa-hashtag",
+                "backgroundColor": "#ddd",
+                "color": "#000"
+            }
+        }
+    }
+}

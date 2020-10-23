@@ -1,0 +1,50 @@
+{
+    "name": "kyrne/shout",
+    "description":  "Private Messaging for Flarum.",
+    "keywords": [
+        "flarum",
+        "friendsofflarum",
+        "kyrne",
+        "settings",
+        "points",
+        "private message"
+    ],
+    "type": "flarum-extension",
+    "license": "MIT",
+    "authors": [
+        {
+          "name": "Charlie K",
+          "email": "Charlie.K@redevs.org",
+          "homepage": "https://redevs.org"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/kyrne/shout-public/issues",
+        "source": "https://github.com/kyrne/shout-public"
+    },
+    "require": {
+        "flarum/core": "^0.1.0-beta.12",
+        "kyrne/ext-core": "*@dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "Kyrne\\Shout\\": "src/"
+        }
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "Shout",
+            "icon": "fas fa-comments",
+            "info": {
+                "link": "https://discuss.flarum.org/d/24073-shout-private-messaging-for-flarum",
+                "location": "Flarum Commmunity"
+            },
+            "extra": {
+                "icon": "fab fa-github",
+                "link": "https://github.com/kyrnedev/shout-public",
+                "title": "Source",
+                "location": "Github"
+            }
+        }
+    }
+}

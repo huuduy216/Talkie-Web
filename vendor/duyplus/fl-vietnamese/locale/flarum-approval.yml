@@ -1,0 +1,37 @@
+flarum-approval:
+
+  ##
+  # UNIQUE KEYS - Các phím sau chỉ được sử dụng ở một vị trí.
+  ##
+
+  # Các bản dịch trong không gian tên này được sử dụng bởi giao diện quản trị.
+  admin:
+
+    # Các bản dịch này được sử dụng trong trang Quyền của giao diện quản trị viên.
+    permissions:
+      approve_posts_label: Phê duyệt bài viết
+      reply_without_approval_label: Trả lời thảo luận mà không cần phê duyệt
+      start_discussions_without_approval_label: Bắt đầu thảo luận mà không cần phê duyệt
+
+  # Các bản dịch trong không gian tên này được sử dụng bởi giao diện người dùng diễn đàn.
+  forum:
+
+    # Các bản dịch này được hiển thị dưới dạng chú giải công cụ cho phù hiệu thảo luận.
+    badge:
+      awaiting_approval_tooltip: => flarum-approval.ref.awaiting_approval
+
+    # Các bản dịch này được hiển thị trong tiêu đề bài.
+    post:
+      awaiting_approval_text: => flarum-approval.ref.awaiting_approval
+
+    # Các bản dịch này được sử dụng bởi các nút điều khiển bài.
+    post_controls:
+      approve_button: Phê duyệt
+
+  ##
+  # REUSED TRANSLATIONS - Các khóa này không nên được sử dụng trực tiếp trong mã!
+  ##
+
+  # Các bản dịch trong không gian tên này được tham chiếu bởi hai hoặc nhiều khóa duy nhất.
+  ref:
+    awaiting_approval: Chờ phê duyệt

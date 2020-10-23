@@ -1,0 +1,59 @@
+{
+    "name": "fof/nightmode",
+    "description": "Add a Night Mode option for your users to use on your Flarum forum",
+    "keywords": [
+        "flarum",
+        "extension",
+        "friendsoflarum",
+        "nightmode",
+        "night",
+        "mode",
+        "option"
+    ],
+    "type": "flarum-extension",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Shahiem Seymor"
+        },
+        {
+            "name": "Christian Lopez",
+            "email": "Lopez.T.Christian@gmail.com"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/FriendsOfFlarum/nightmode/issues",
+        "source": "https://github.com/FriendsOfFlarum/nightmode"
+    },
+    "require": {
+        "flarum/core": "^0.1.0-beta.8",
+        "fof/components": ">=0.1.1",
+        "fof/extend": ">=0.2.0"
+    },
+    "replace": {
+        "reflar/nightmode": "*"
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "FoF Night Mode",
+            "icon": {
+                "name": "far fa-moon",
+                "backgroundColor": "#e74c3c",
+                "color": "#fff"
+            }
+        },
+        "flagrow": {
+            "discuss": "https://discuss.flarum.org/d/21492"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "FoF\\NightMode\\": "src/"
+        },
+        "files": [
+            "src/Overrides/Forum/ValidateCustomLess.php",
+            "src/Overrides/Frontend/Assets.php",
+            "src/Overrides/Frontend/RecompileFrontendAssets.php"
+        ]
+    }
+}

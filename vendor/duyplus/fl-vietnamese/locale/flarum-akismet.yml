@@ -1,0 +1,22 @@
+flarum-akismet:
+
+  ##
+  # UNIQUE KEYS - Các phím sau chỉ được sử dụng ở một vị trí.
+  ##
+
+  # Các bản dịch trong không gian tên này được sử dụng bởi giao diện quản trị.
+  admin:
+
+    # Các bản dịch này được sử dụng trong hộp thoại phương thức Cài đặt Akismet.
+    akismet_settings:
+      api_key_label: API Key
+      title: Cài đặt Akismet
+
+  # Các bản dịch trong không gian tên này được sử dụng bởi giao diện người dùng diễn đàn.
+  forum:
+
+    # Các bản dịch này được sử dụng bởi khung hiển thị xung quanh các bài viết được gắn cờ.
+    post:
+      akismet_flagged_text: Akismet bị gắn cờ là spam
+      not_spam_button: Không phải spam
+

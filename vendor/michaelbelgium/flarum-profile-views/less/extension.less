@@ -1,0 +1,28 @@
+fieldset.LastUsers {
+	ul {
+		list-style-type: none;
+		padding: 0;
+
+		li a {
+			display: flex;
+			justify-content: space-between;
+
+			div {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				align-items: flex-end;
+	
+				span.lastUser-visited {
+					font-size: .8em;
+				}
+			}
+		}
+
+		li a:hover {
+			div > span {
+				text-decoration: underline;
+			}
+		}
+	}
+}

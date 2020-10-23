@@ -1,0 +1,22 @@
+{
+    "name": "kyrne/ext-core",
+    "description": "[NOT EXT] Extension branding",
+    "keywords": ["flarum", "kyrne"],
+    "type": "branding",
+    "license": "MIT",
+    "require": {
+      "flarum/core": "^0.1.0-beta.12"
+    },
+    "authors": [
+      {
+        "name": "Charlie Kern",
+        "email": "idontreallyhaveapublicflarumemailanymore@yeet.com",
+        "role": "Developer"
+      }
+    ],
+    "autoload": {
+      "psr-4": {
+        "Kyrne\\ExtCore\\": "src/"
+      }
+    }
+  }

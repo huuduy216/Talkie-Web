@@ -1,0 +1,34 @@
+pushedx-chat:
+  forum:
+    toolbar:
+      title: Чат
+      enable_sounds: Включить звуковые уведомления
+      disable_sounds: Отключить звуковые уведомления
+      enable_notifications: Включить push-уведомления
+      disable_notifications: Отключить push-уведомления
+      minimize: Свернуть
+      maximize: Развернуть
+    chat:
+      placeholder: Напишите сообщение...
+      message:
+        actions:
+          hide: Скрыть
+          resend: Отправить еще раз
+    errors:
+      unauthenticated: Писать в чате могут только зарегистрированные пользователи
+      chatdenied: Вашей группе пользователей запрещено писать сообщения
+  admin:
+    permissions:
+      post: Отправлять чат сообщения
+      edit: Править чат сообщения
+      delete: Удалять чат сообщения
+      moderate:
+        delete: Удалять чат сообщения
+        
+    settings:
+      title: Настройки чата
+      charlimit: Максимум символов в сообщении
+      floodgate:
+        title: Антифлуд
+        number: Количество сообщений подряд
+        time: За промежуток времени

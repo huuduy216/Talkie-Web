@@ -1,0 +1,21 @@
+flarum-auth-facebook:
+
+  ##
+  # UNIQUE KEYS - Các phím sau chỉ được sử dụng ở một vị trí.
+  ##
+
+  # Các bản dịch trong không gian tên này được sử dụng bởi giao diện quản trị.
+  admin:
+
+    # Các bản dịch này được sử dụng trong hộp thoại phương thức Cài đặt Facebook.
+    facebook_settings:
+      app_id_label: App ID
+      app_secret_label: App Secret
+      title: Cài đặt Facebook
+
+  # Các bản dịch trong không gian tên này được sử dụng bởi giao diện người dùng diễn đàn.
+  forum:
+
+    # Các bản dịch này được sử dụng trong hộp thoại đăng nhập phương thức.
+    log_in:
+      with_facebook_button: Đăng nhập Facebook

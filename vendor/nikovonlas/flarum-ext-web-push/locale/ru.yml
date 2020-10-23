@@ -1,0 +1,54 @@
+nikovonlas-webpush:
+  forum:
+    subscribe: Подписка на пуш уведомления
+  admin:
+    settings:
+      title: Настройки WebPush
+      type:
+        description: Onesignal тип подключения
+        standart: Standart
+        custom: Custom
+      app_id: Onesignal app id
+      api_key: Onesignal api key
+      user_key: Onesignal user key
+      subdomain: Onesignal subdomain
+      excerpt: Длинна скоращений в оповещениях
+      autoprompt: Показывать запрос на оповещения сразу(для авторизовавшихся пользователей)
+  notify:
+    like:
+      title: Пост лайкнули
+      message: '{from} лайкнул(a) ваш пост: {post}'
+    mention-post:
+      title: 'Вам ответили на пост в теме: {title}'
+      message: '{from} ответил(a) на ваш пост: {post}'
+    mention:
+      title: 'Вас упомянули в теме: {title}'
+      message: '{from} упомянул(a) вас в посте: {post}'
+    post:
+      title: 'Новый пост в избранном: {title}'
+      message: '{from} создал(a) пост: {post}'
+    tag:
+      discussion:
+        title: Новая тема с избранным тегом
+        message: '{from} создал(a) тему: {title}'
+      post:
+        title: 'Новый пост в теме: {title}'
+        message: '{from} написал(a) пост: {post}'
+    rename:
+      title: Тема переименована
+      message: '{from} переименовал(a) тему в: {title}'
+    lock:
+      title: Тема закрыта
+      message: '{from} закрыл(a) тему: {title}'
+    delete:
+      title: Тема удалена
+      message: '{from} удалил(a) вашу тему: {title}'
+    suspend:
+      title: Ваш аккаунт забанен
+      message: '{from} забанил(a) ваш аккаунт'
+    unsuspend:
+      title: Ваш аккаунт разбанен
+      message: '{from} разбанил(a) ваш аккаунт'
+    flag:
+      title: Новая жалоба
+      message: '{from} пожаловался(ась) на пост: {post}'

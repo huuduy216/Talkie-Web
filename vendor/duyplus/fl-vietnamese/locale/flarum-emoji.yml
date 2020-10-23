@@ -1,0 +1,13 @@
+flarum-emoji:
+
+  ##
+  # UNIQUE KEYS - Các phím sau chỉ được sử dụng ở một vị trí.
+  ##
+
+  # Các bản dịch trong không gian tên này được sử dụng bởi giao diện người dùng diễn đàn.
+  forum:
+
+    # Các bản dịch này được sử dụng bởi nhà soạn nhạc (chức năng tự động hoàn thành biểu tượng cảm xúc).
+    composer:
+      emoji_tooltip: Chèn biểu tượng cảm xúc
+      type_to_search_text: Nhập để tìm kiếm biểu tượng cảm xúc

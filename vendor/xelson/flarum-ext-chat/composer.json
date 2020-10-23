@@ -1,0 +1,51 @@
+{
+    "name": "xelson/flarum-ext-chat",
+    "description": "Fork of original Push-EDX Realtime Chat with some improvements and bugfixes",
+    "keywords": [
+        "chat",
+        "flarum",
+        "pushedx",
+        "push-edx",
+        "Xelson"
+    ],
+    "type": "flarum-extension",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Juan"
+        },
+        {
+            "name": "Guillem Pascual",
+            "email": "blipi.tube@gmail.com",
+            "homepage": "http://pushedx.net"
+        },
+        {
+            "name": "Xelson",
+            "homepage": "https://neonsky.ru"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/Xelson/flarum-ext-chat/issues",
+        "source": "https://github.com/Xelson/flarum-ext-chat"
+    },
+    "require": {
+        "flarum/core": "^0.1.0-beta.8",
+        "flarum/markdown": "^0.1.0"
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "Neon Chat",
+            "icon": {
+                "image": "icon.svg",
+                "backgroundColor": "#ffaad4",
+                "backgroundSize": "cover",
+                "backgroundPosition": "center"
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Xelson\\Chat\\": "src/"
+        }
+    }
+}

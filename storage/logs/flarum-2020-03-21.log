@@ -1,0 +1,53 @@
+[2020-03-21 15:51:21] production.ERROR: Swift_TransportException: Failed to authenticate on SMTP server with username "talkiesignup@gmail.com" using 3 possible authenticators. Authenticator LOGIN returned Expected response code 235 but got code "535", with message "535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials r8sm7528276pjo.22 - gsmtp
+". Authenticator PLAIN returned Expected response code 235 but got code "535", with message "535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials r8sm7528276pjo.22 - gsmtp
+". Authenticator XOAUTH2 returned Expected response code 250 but got code "535", with message "535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials r8sm7528276pjo.22 - gsmtp
+". in /var/www/vhosts/talkie.vn/httpdocs/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/Esmtp/AuthHandler.php:191
+Stack trace:
+#0 /var/www/vhosts/talkie.vn/httpdocs/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/EsmtpTransport.php(371): Swift_Transport_Esmtp_AuthHandler->afterEhlo(Object(Swift_SmtpTransport))
+#1 /var/www/vhosts/talkie.vn/httpdocs/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/AbstractSmtpTransport.php(148): Swift_Transport_EsmtpTransport->doHeloCommand()
+#2 /var/www/vhosts/talkie.vn/httpdocs/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mailer.php(65): Swift_Transport_AbstractSmtpTransport->start()
+#3 /var/www/vhosts/talkie.vn/httpdocs/vendor/illuminate/mail/Mailer.php(483): Swift_Mailer->send(Object(Swift_Message), Array)
+#4 /var/www/vhosts/talkie.vn/httpdocs/vendor/illuminate/mail/Mailer.php(259): Illuminate\Mail\Mailer->sendSwiftMessage(Object(Swift_Message))
+#5 /var/www/vhosts/talkie.vn/httpdocs/vendor/illuminate/mail/Mailer.php(183): Illuminate\Mail\Mailer->send(NULL, Array, Object(Closure))
+#6 /var/www/vhosts/talkie.vn/httpdocs/vendor/flarum/core/src/Api/Controller/SendConfirmationEmailController.php(92): Illuminate\Mail\Mailer->raw('Ch\xC3\xA0o huuduy216...', Object(Closure))
+#7 /var/www/vhosts/talkie.vn/httpdocs/vendor/flarum/core/src/Http/RouteHandlerFactory.php(38): Flarum\Api\Controller\SendConfirmationEmailController->handle(Object(Laminas\Diactoros\ServerRequest))
+#8 /var/www/vhosts/talkie.vn/httpdocs/vendor/flarum/core/src/Http/Middleware/DispatchRoute.php(65): Flarum\Http\RouteHandlerFactory->Flarum\Http\{closure}(Object(Laminas\Diactoros\ServerRequest), Array)
+#9 /var/www/vhosts/talkie.vn/httpdocs/vendor/laminas/laminas-stratigility/src/Next.php(61): Flarum\Http\Middleware\DispatchRoute->process(Object(Laminas\Diactoros\ServerRequest), Object(Closure))
+#10 /var/www/vhosts/talkie.vn/httpdocs/vendor/fof/stopforumspam/src/Middleware/RegisterMiddleware.php(94): Laminas\Stratigility\Next->handle(Object(Laminas\Diactoros\ServerRequest))
+#11 /var/www/vhosts/talkie.vn/httpdocs/vendor/laminas/laminas-stratigility/src/Next.php(61): FoF\StopForumSpam\Middleware\RegisterMiddleware->process(Object(Laminas\Diactoros\ServerRequest), Object(Laminas\Stratigility\Next))
+#12 /var/www/vhosts/talkie.vn/httpdocs/vendor/flarum/core/src/Http/Middleware/SetLocale.php(50): Laminas\Stratigility\Next->handle(Object(Laminas\Diactoros\ServerRequest))
+#13 /var/www/vhosts/talkie.vn/httpdocs/vendor/laminas/laminas-stratigility/src/Next.php(61): Flarum\Http\Middleware\SetLocale->process(Object(Laminas\Diactoros\ServerRequest), Object(Laminas\Stratigility\Next))
+#14 /var/www/vhosts/talkie.vn/httpdocs/vendor/flarum/core/src/Http/Middleware/CheckCsrfToken.php(31): Laminas\Stratigility\Next->handle(Object(Laminas\Diactoros\ServerRequest))
+#15 /var/www/vhosts/talkie.vn/httpdocs/vendor/laminas/laminas-stratigility/src/Next.php(61): Flarum\Http\Middleware\CheckCsrfToken->process(Object(Laminas\Diactoros\ServerRequest), Object(Laminas\Stratigility\Next))
+#16 /var/www/vhosts/talkie.vn/httpdocs/vendor/flarum/core/src/Http/Middleware/AuthenticateWithHeader.php(55): Laminas\Stratigility\Next->handle(Object(Laminas\Diactoros\ServerRequest))
+#17 /var/www/vhosts/talkie.vn/httpdocs/vendor/laminas/laminas-stratigility/src/Next.php(61): Flarum\Http\Middleware\AuthenticateWithHeader->process(Object(Laminas\Diactoros\ServerRequest), Object(Laminas\Stratigility\Next))
+#18 /var/www/vhosts/talkie.vn/httpdocs/vendor/flarum/core/src/Http/Middleware/AuthenticateWithSession.php(32): Laminas\Stratigility\Next->handle(Object(Laminas\Diactoros\ServerRequest))
+#19 /var/www/vhosts/talkie.vn/httpdocs/vendor/laminas/laminas-stratigility/src/Next.php(61): Flarum\Http\Middleware\AuthenticateWithSession->process(Object(Laminas\Diactoros\ServerRequest), Object(Laminas\Stratigility\Next))
+#20 /var/www/vhosts/talkie.vn/httpdocs/vendor/flarum/core/src/Http/Middleware/RememberFromCookie.php(51): Laminas\Stratigility\Next->handle(Object(Laminas\Diactoros\ServerRequest))
+#21 /var/www/vhosts/talkie.vn/httpdocs/vendor/laminas/laminas-stratigility/src/Next.php(61): Flarum\Http\Middleware\RememberFromCookie->process(Object(Laminas\Diactoros\ServerRequest), Object(Laminas\Stratigility\Next))
+#22 /var/www/vhosts/talkie.vn/httpdocs/vendor/flarum/core/src/Http/Middleware/StartSession.php(61): Laminas\Stratigility\Next->handle(Object(Laminas\Diactoros\ServerRequest))
+#23 /var/www/vhosts/talkie.vn/httpdocs/vendor/laminas/laminas-stratigility/src/Next.php(61): Flarum\Http\Middleware\StartSession->process(Object(Laminas\Diactoros\ServerRequest), Object(Laminas\Stratigility\Next))
+#24 /var/www/vhosts/talkie.vn/httpdocs/vendor/flarum/core/src/Api/Middleware/FakeHttpMethods.php(29): Laminas\Stratigility\Next->handle(Object(Laminas\Diactoros\ServerRequest))
+#25 /var/www/vhosts/talkie.vn/httpdocs/vendor/laminas/laminas-stratigility/src/Next.php(61): Flarum\Api\Middleware\FakeHttpMethods->process(Object(Laminas\Diactoros\ServerRequest), Object(Laminas\Stratigility\Next))
+#26 /var/www/vhosts/talkie.vn/httpdocs/vendor/flarum/core/src/Http/Middleware/ParseJsonBody.php(28): Laminas\Stratigility\Next->handle(Object(Laminas\Diactoros\ServerRequest))
+#27 /var/www/vhosts/talkie.vn/httpdocs/vendor/laminas/laminas-stratigility/src/Next.php(61): Flarum\Http\Middleware\ParseJsonBody->process(Object(Laminas\Diactoros\ServerRequest), Object(Laminas\Stratigility\Next))
+#28 /var/www/vhosts/talkie.vn/httpdocs/vendor/flarum/core/src/Http/Middleware/HandleErrors.php(57): Laminas\Stratigility\Next->handle(Object(Laminas\Diactoros\ServerRequest))
+#29 /var/www/vhosts/talkie.vn/httpdocs/vendor/laminas/laminas-stratigility/src/Next.php(61): Flarum\Http\Middleware\HandleErrors->process(Object(Laminas\Diactoros\ServerRequest), Object(Laminas\Stratigility\Next))
+#30 /var/www/vhosts/talkie.vn/httpdocs/vendor/laminas/laminas-stratigility/src/MiddlewarePipe.php(84): Laminas\Stratigility\Next->handle(Object(Laminas\Diactoros\ServerRequest))
+#31 /var/www/vhosts/talkie.vn/httpdocs/vendor/middlewares/request-handler/src/RequestHandler.php(84): Laminas\Stratigility\MiddlewarePipe->process(Object(Laminas\Diactoros\ServerRequest), Object(Laminas\Stratigility\Next))
+#32 /var/www/vhosts/talkie.vn/httpdocs/vendor/laminas/laminas-stratigility/src/Next.php(61): Middlewares\RequestHandler->process(Object(Laminas\Diactoros\ServerRequest), Object(Laminas\Stratigility\Next))
+#33 /var/www/vhosts/talkie.vn/httpdocs/vendor/middlewares/base-path-router/src/BasePathRouter.php(97): Laminas\Stratigility\Next->handle(Object(Laminas\Diactoros\ServerRequest))
+#34 /var/www/vhosts/talkie.vn/httpdocs/vendor/laminas/laminas-stratigility/src/Next.php(61): Middlewares\BasePathRouter->process(Object(Laminas\Diactoros\ServerRequest), Object(Laminas\Stratigility\Next))
+#35 /var/www/vhosts/talkie.vn/httpdocs/vendor/laminas/laminas-stratigility/src/Middleware/OriginalMessages.php(42): Laminas\Stratigility\Next->handle(Object(Laminas\Diactoros\ServerRequest))
+#36 /var/www/vhosts/talkie.vn/httpdocs/vendor/laminas/laminas-stratigility/src/Next.php(61): Laminas\Stratigility\Middleware\OriginalMessages->process(Object(Laminas\Diactoros\ServerRequest), Object(Laminas\Stratigility\Next))
+#37 /var/www/vhosts/talkie.vn/httpdocs/vendor/middlewares/base-path/src/BasePath.php(53): Laminas\Stratigility\Next->handle(Object(Laminas\Diactoros\ServerRequest))
+#38 /var/www/vhosts/talkie.vn/httpdocs/vendor/laminas/laminas-stratigility/src/Next.php(61): Middlewares\BasePath->process(Object(Laminas\Diactoros\ServerRequest), Object(Laminas\Stratigility\Next))
+#39 /var/www/vhosts/talkie.vn/httpdocs/vendor/laminas/laminas-stratigility/src/MiddlewarePipe.php(84): Laminas\Stratigility\Next->handle(Object(Laminas\Diactoros\ServerRequest))
+#40 /var/www/vhosts/talkie.vn/httpdocs/vendor/laminas/laminas-stratigility/src/MiddlewarePipe.php(73): Laminas\Stratigility\MiddlewarePipe->process(Object(Laminas\Diactoros\ServerRequest), Object(Laminas\Stratigility\EmptyPipelineHandler))
+#41 /var/www/vhosts/talkie.vn/httpdocs/vendor/laminas/laminas-httphandlerrunner/src/RequestHandlerRunner.php(96): Laminas\Stratigility\MiddlewarePipe->handle(Object(Laminas\Diactoros\ServerRequest))
+#42 /var/www/vhosts/talkie.vn/httpdocs/vendor/flarum/core/src/Http/Server.php(42): Laminas\HttpHandlerRunner\RequestHandlerRunner->run()
+#43 /var/www/vhosts/talkie.vn/httpdocs/public/index.php(26): Flarum\Http\Server->listen()
+#44 {main}  

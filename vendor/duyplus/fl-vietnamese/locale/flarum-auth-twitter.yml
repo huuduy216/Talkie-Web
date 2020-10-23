@@ -1,0 +1,21 @@
+flarum-auth-twitter:
+
+  ##
+  # UNIQUE KEYS - Các phím sau chỉ được sử dụng ở một vị trí.
+  ##
+
+  # Các bản dịch trong không gian tên này được sử dụng bởi giao diện quản trị.
+  admin:
+
+    # Các bản dịch này được sử dụng trong hộp thoại phương thức Cài đặt Twitter.
+    twitter_settings:
+      api_key_label: API Key
+      api_secret_label: API Secret
+      title: Cài đặt Twitter
+
+  # Các bản dịch trong không gian tên này được sử dụng bởi giao diện người dùng diễn đàn.
+  forum:
+
+    # Các bản dịch này được sử dụng trong hộp thoại đăng nhập phương thức.
+    log_in:
+      with_twitter_button: Đăng nhập bằng Twitter
