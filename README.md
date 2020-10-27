@@ -1,11 +1,10 @@
-<p align="center"><img src="https://flarum.org/img/logo.png"></p>
-
-<p align="center">
-<a href="https://travis-ci.org/flarum/core"><img src="https://travis-ci.org/flarum/core.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/flarum/core"><img src="https://poser.pugx.org/flarum/core/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/flarum/core"><img src="https://poser.pugx.org/flarum/core/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/flarum/core"><img src="https://poser.pugx.org/flarum/core/license.svg" alt="License"></a>
-</p>
+## Instruction
+1/ Install XAMP (we use 7.3.18 for both XAMPP and PHP)
+2/ Clone the repo
+3/ Start XAMPP, start Apache and MySQL server
+4/ Import the tal971714_db.sql db to your db (XAMPP control panel -> MySQL -> Admin)
+5/ Change the information in config.php accordingly to your setup (database,username,password,url)
+6/ Navigate to "url" (usually localhost pr localhost/public)
 
 ## About Flarum
 
