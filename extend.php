@@ -11,4 +11,7 @@ use Flarum\Extend;
 
 return [
     // Register extenders here to customize your forum!
+	(new Extend\Frontend('forum'))
+        ->css(__DIR__ . '/less/forum.less')
+
 ];

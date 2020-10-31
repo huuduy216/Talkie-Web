@@ -1,2 +1,6 @@
 
 config.php
+
+public/
+
+storage/
