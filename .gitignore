@@ -1,6 +1,6 @@
 
 config.php
 
-public/
+public/*
 
-storage/
+storage/*
