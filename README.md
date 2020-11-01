@@ -1,9 +1,14 @@
 ## Instruction
 1/ Install XAMP (we use 7.3.18 for both XAMPP and PHP)
-2/ Clone the repo
+
+2/ Clone the repo to XAMP htdocs folder
+
 3/ Start XAMPP, start Apache and MySQL server
+
 4/ Import the tal971714_db.sql db to your db (XAMPP control panel -> MySQL -> Admin)
+
 5/ Change the information in config.php accordingly to your setup (database,username,password,url)
+
 6/ Navigate to "url" (usually localhost pr localhost/public)
 
 ## About Flarum
