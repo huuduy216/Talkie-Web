@@ -126,5 +126,5 @@ Options -MultiViews
 
 # Fix for https://httpoxy.org vulnerability
 <IfModule mod_headers.c>
-  RequestHeader unset Proxy
+  Header set Access-Control-Allow-Origin "*"
 </IfModule>

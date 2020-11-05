@@ -8,6 +8,7 @@ class ComposerStaticInit88ee21944a6489eec8a793ac5fe51baa
 {
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
+        'e69f7f6ee287b969198c3c9d6777bd38' => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer/bootstrap.php',
         '25072dd6e2470089de65ae7bf11d3109' => __DIR__ . '/..' . '/symfony/polyfill-php72/bootstrap.php',
         'f598d06aa772fa33d905e87be6398fb1' => __DIR__ . '/..' . '/symfony/polyfill-intl-idn/bootstrap.php',
         '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
@@ -69,6 +70,10 @@ class ComposerStaticInit88ee21944a6489eec8a793ac5fe51baa
         array (
             'oe800\\Gravatar\\' => 15,
         ),
+        'l' => 
+        array (
+            'luatdolphin\\lang-vietnamese\\' => 28,
+        ),
         'a' => 
         array (
             'axy\\sourcemap\\' => 14,
@@ -104,6 +109,7 @@ class ComposerStaticInit88ee21944a6489eec8a793ac5fe51baa
             'Symfony\\Polyfill\\Php73\\' => 23,
             'Symfony\\Polyfill\\Php72\\' => 23,
             'Symfony\\Polyfill\\Mbstring\\' => 26,
+            'Symfony\\Polyfill\\Intl\\Normalizer\\' => 33,
             'Symfony\\Polyfill\\Intl\\Idn\\' => 26,
             'Symfony\\Polyfill\\Iconv\\' => 23,
             'Symfony\\Polyfill\\Ctype\\' => 23,
@@ -167,7 +173,8 @@ class ComposerStaticInit88ee21944a6489eec8a793ac5fe51baa
         'L' => 
         array (
             'League\\OAuth2\\Client\\' => 21,
-            'League\\OAuth1\\' => 14,
+            'League\\OAuth1\\Client\\' => 21,
+            'League\\MimeTypeDetection\\' => 25,
             'League\\Flysystem\\' => 17,
             'Laminas\\ZendFrameworkBridge\\' => 28,
             'Laminas\\Stratigility\\' => 21,
@@ -332,6 +339,10 @@ class ComposerStaticInit88ee21944a6489eec8a793ac5fe51baa
         array (
             0 => __DIR__ . '/..' . '/oe800/flarum-gravatar/src',
         ),
+        'luatdolphin\\lang-vietnamese\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/luatdolphin/lang-vietnamese/src',
+        ),
         'axy\\sourcemap\\' => 
         array (
             0 => __DIR__ . '/..' . '/axy/sourcemap',
@@ -391,6 +402,10 @@ class ComposerStaticInit88ee21944a6489eec8a793ac5fe51baa
         'Symfony\\Polyfill\\Mbstring\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-mbstring',
+        ),
+        'Symfony\\Polyfill\\Intl\\Normalizer\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer',
         ),
         'Symfony\\Polyfill\\Intl\\Idn\\' => 
         array (
@@ -578,9 +593,13 @@ class ComposerStaticInit88ee21944a6489eec8a793ac5fe51baa
             1 => __DIR__ . '/..' . '/league/oauth2-facebook/src',
             2 => __DIR__ . '/..' . '/league/oauth2-github/src',
         ),
-        'League\\OAuth1\\' => 
+        'League\\OAuth1\\Client\\' => 
         array (
             0 => __DIR__ . '/..' . '/league/oauth1-client/src',
+        ),
+        'League\\MimeTypeDetection\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/league/mime-type-detection/src',
         ),
         'League\\Flysystem\\' => 
         array (
@@ -1062,11 +1081,15 @@ class ComposerStaticInit88ee21944a6489eec8a793ac5fe51baa
     );
 
     public static $classMap = array (
+        'Attribute' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
+        'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
         'JsonException' => __DIR__ . '/..' . '/symfony/polyfill-php73/Resources/stubs/JsonException.php',
+        'Normalizer' => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer/Resources/stubs/Normalizer.php',
         'Pusher' => __DIR__ . '/..' . '/pusher/pusher-php-server/lib/Pusher.php',
         'PusherException' => __DIR__ . '/..' . '/pusher/pusher-php-server/lib/Pusher.php',
         'PusherInstance' => __DIR__ . '/..' . '/pusher/pusher-php-server/lib/Pusher.php',
         'Stringable' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Stringable.php',
+        'UnhandledMatchError' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/UnhandledMatchError.php',
         'ValueError' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/ValueError.php',
         'lessc' => __DIR__ . '/..' . '/wikimedia/less.php/lessc.inc.php',
     );
