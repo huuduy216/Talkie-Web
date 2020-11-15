@@ -38,6 +38,7 @@
     "require": {
         "antoinefr/flarum-ext-money": "^0.8.0",
         "askvortsov/flarum-pwa": "1.0.8",
+        "clarkwinkelmann/flarum-ext-author-change": "0.2.0",
         "clarkwinkelmann/flarum-ext-circle-groups": "^0.2.1",
         "clarkwinkelmann/flarum-ext-emojionearea": "^0.2.1",
         "clarkwinkelmann/flarum-ext-follow-tags-prompt": "^0.1.3",
