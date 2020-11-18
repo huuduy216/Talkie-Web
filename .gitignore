@@ -6,3 +6,5 @@ public/*
 public/assets/
 
 storage/*
+
+**/node_modules/*
