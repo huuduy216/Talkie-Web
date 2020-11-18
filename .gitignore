@@ -3,4 +3,6 @@ config.php
 
 public/*
 
+public/assets/
+
 storage/*

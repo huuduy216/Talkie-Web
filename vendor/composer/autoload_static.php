@@ -8,6 +8,7 @@ class ComposerStaticInit88ee21944a6489eec8a793ac5fe51baa
 {
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
+        'e69f7f6ee287b969198c3c9d6777bd38' => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer/bootstrap.php',
         '25072dd6e2470089de65ae7bf11d3109' => __DIR__ . '/..' . '/symfony/polyfill-php72/bootstrap.php',
         'f598d06aa772fa33d905e87be6398fb1' => __DIR__ . '/..' . '/symfony/polyfill-intl-idn/bootstrap.php',
         '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
@@ -48,9 +49,6 @@ class ComposerStaticInit88ee21944a6489eec8a793ac5fe51baa
         '84245cb95409c51c4ae97f8e59da883a' => __DIR__ . '/..' . '/flarum/core/src/helpers.php',
         'c964ee0ededf28c96ebd9db5099ef910' => __DIR__ . '/..' . '/guzzlehttp/promises/src/functions_include.php',
         '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
-        '9c67151ae59aff4788964ce8eb2a0f43' => __DIR__ . '/..' . '/clue/stream-filter/src/functions_include.php',
-        '6e3fae29631ef280660b3cdad06f25a8' => __DIR__ . '/..' . '/symfony/deprecation-contracts/function.php',
-        '8cff32064859f4559445b89279f3199c' => __DIR__ . '/..' . '/php-http/message/src/filters.php',
         '3109cb1a231dcd04bee1f9f620d46975' => __DIR__ . '/..' . '/paragonie/sodium_compat/autoload.php',
         'e39a8b23c42d4e1452234d762b03835a' => __DIR__ . '/..' . '/ramsey/uuid/src/functions.php',
         '2a1113d34562ecc8c338eb5d2958a97a' => __DIR__ . '/..' . '/fof/nightmode/src/Overrides/Forum/ValidateCustomLess.php',
@@ -80,10 +78,6 @@ class ComposerStaticInit88ee21944a6489eec8a793ac5fe51baa
         array (
             'ZerosOnesFun\\Hashtags\\' => 22,
         ),
-        'X' => 
-        array (
-            'Xelson\\Chat\\' => 12,
-        ),
         'W' => 
         array (
             'Whoops\\' => 7,
@@ -104,6 +98,7 @@ class ComposerStaticInit88ee21944a6489eec8a793ac5fe51baa
             'Symfony\\Polyfill\\Php73\\' => 23,
             'Symfony\\Polyfill\\Php72\\' => 23,
             'Symfony\\Polyfill\\Mbstring\\' => 26,
+            'Symfony\\Polyfill\\Intl\\Normalizer\\' => 33,
             'Symfony\\Polyfill\\Intl\\Idn\\' => 26,
             'Symfony\\Polyfill\\Iconv\\' => 23,
             'Symfony\\Polyfill\\Ctype\\' => 23,
@@ -112,7 +107,6 @@ class ComposerStaticInit88ee21944a6489eec8a793ac5fe51baa
             'Symfony\\Component\\Yaml\\' => 23,
             'Symfony\\Component\\Translation\\' => 30,
             'Symfony\\Component\\Process\\' => 26,
-            'Symfony\\Component\\OptionsResolver\\' => 34,
             'Symfony\\Component\\Mime\\' => 23,
             'Symfony\\Component\\HttpFoundation\\' => 33,
             'Symfony\\Component\\Finder\\' => 25,
@@ -140,17 +134,11 @@ class ComposerStaticInit88ee21944a6489eec8a793ac5fe51baa
             'Psr\\Log\\' => 8,
             'Psr\\Http\\Server\\' => 16,
             'Psr\\Http\\Message\\' => 17,
-            'Psr\\Http\\Client\\' => 16,
             'Psr\\Container\\' => 14,
         ),
         'O' => 
         array (
             'Opis\\Closure\\' => 13,
-            'OneSignal\\' => 10,
-        ),
-        'N' => 
-        array (
-            'NikoVonLas\\WebPush\\' => 19,
         ),
         'M' => 
         array (
@@ -212,14 +200,6 @@ class ComposerStaticInit88ee21944a6489eec8a793ac5fe51baa
             'Illuminate\\Cache\\' => 17,
             'Illuminate\\Bus\\' => 15,
             'ITNT\\UITab\\' => 11,
-        ),
-        'H' => 
-        array (
-            'Http\\Promise\\' => 13,
-            'Http\\Message\\' => 13,
-            'Http\\Client\\Common\\' => 19,
-            'Http\\Client\\' => 12,
-            'Http\\Adapter\\Guzzle6\\' => 21,
         ),
         'G' => 
         array (
@@ -284,7 +264,6 @@ class ComposerStaticInit88ee21944a6489eec8a793ac5fe51baa
         ),
         'E' => 
         array (
-            'Extum\\MDL\\' => 10,
             'Egulias\\EmailValidator\\' => 23,
         ),
         'D' => 
@@ -300,7 +279,6 @@ class ComposerStaticInit88ee21944a6489eec8a793ac5fe51baa
         'C' => 
         array (
             'Cron\\' => 5,
-            'Clue\\StreamFilter\\' => 18,
             'ClarkWinkelmann\\FollowTagsPrompt\\' => 33,
             'ClarkWinkelmann\\EmojioneArea\\' => 29,
         ),
@@ -311,6 +289,7 @@ class ComposerStaticInit88ee21944a6489eec8a793ac5fe51baa
         ),
         'A' => 
         array (
+            'Askvortsov\\FlarumPWA\\' => 21,
             'AntoineFr\\Money\\' => 16,
         ),
     );
@@ -352,10 +331,6 @@ class ComposerStaticInit88ee21944a6489eec8a793ac5fe51baa
         array (
             0 => __DIR__ . '/..' . '/zerosonesfun/hashtags/src',
         ),
-        'Xelson\\Chat\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/xelson/flarum-ext-chat/src',
-        ),
         'Whoops\\' => 
         array (
             0 => __DIR__ . '/..' . '/filp/whoops/src/Whoops',
@@ -392,6 +367,10 @@ class ComposerStaticInit88ee21944a6489eec8a793ac5fe51baa
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-mbstring',
         ),
+        'Symfony\\Polyfill\\Intl\\Normalizer\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer',
+        ),
         'Symfony\\Polyfill\\Intl\\Idn\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-intl-idn',
@@ -423,10 +402,6 @@ class ComposerStaticInit88ee21944a6489eec8a793ac5fe51baa
         'Symfony\\Component\\Process\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/process',
-        ),
-        'Symfony\\Component\\OptionsResolver\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/symfony/options-resolver',
         ),
         'Symfony\\Component\\Mime\\' => 
         array (
@@ -514,10 +489,6 @@ class ComposerStaticInit88ee21944a6489eec8a793ac5fe51baa
             0 => __DIR__ . '/..' . '/psr/http-factory/src',
             1 => __DIR__ . '/..' . '/psr/http-message/src',
         ),
-        'Psr\\Http\\Client\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/psr/http-client/src',
-        ),
         'Psr\\Container\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/container/src',
@@ -525,14 +496,6 @@ class ComposerStaticInit88ee21944a6489eec8a793ac5fe51baa
         'Opis\\Closure\\' => 
         array (
             0 => __DIR__ . '/..' . '/opis/closure/src',
-        ),
-        'OneSignal\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/norkunas/onesignal-php-api/src',
-        ),
-        'NikoVonLas\\WebPush\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/nikovonlas/flarum-ext-web-push/src',
         ),
         'Monolog\\' => 
         array (
@@ -725,27 +688,6 @@ class ComposerStaticInit88ee21944a6489eec8a793ac5fe51baa
         'ITNT\\UITab\\' => 
         array (
             0 => __DIR__ . '/..' . '/itnt/flarum-uitab/src',
-        ),
-        'Http\\Promise\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/php-http/promise/src',
-        ),
-        'Http\\Message\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/php-http/message/src',
-            1 => __DIR__ . '/..' . '/php-http/message-factory/src',
-        ),
-        'Http\\Client\\Common\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/php-http/client-common/src',
-        ),
-        'Http\\Client\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/php-http/httplug/src',
-        ),
-        'Http\\Adapter\\Guzzle6\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/php-http/guzzle6-adapter/src',
         ),
         'GuzzleHttp\\Psr7\\' => 
         array (
@@ -967,10 +909,6 @@ class ComposerStaticInit88ee21944a6489eec8a793ac5fe51baa
         array (
             0 => __DIR__ . '/..' . '/fgrosse/phpasn1/lib',
         ),
-        'Extum\\MDL\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/extum/flarum-ext-material/src',
-        ),
         'Egulias\\EmailValidator\\' => 
         array (
             0 => __DIR__ . '/..' . '/egulias/email-validator/src',
@@ -1007,10 +945,6 @@ class ComposerStaticInit88ee21944a6489eec8a793ac5fe51baa
         array (
             0 => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron',
         ),
-        'Clue\\StreamFilter\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/clue/stream-filter/src',
-        ),
         'ClarkWinkelmann\\FollowTagsPrompt\\' => 
         array (
             0 => __DIR__ . '/..' . '/clarkwinkelmann/flarum-ext-follow-tags-prompt/src',
@@ -1026,6 +960,10 @@ class ComposerStaticInit88ee21944a6489eec8a793ac5fe51baa
         'Base64Url\\' => 
         array (
             0 => __DIR__ . '/..' . '/spomky-labs/base64url/src',
+        ),
+        'Askvortsov\\FlarumPWA\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/askvortsov/flarum-pwa/src',
         ),
         'AntoineFr\\Money\\' => 
         array (
@@ -1062,11 +1000,14 @@ class ComposerStaticInit88ee21944a6489eec8a793ac5fe51baa
     );
 
     public static $classMap = array (
+        'Attribute' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
         'JsonException' => __DIR__ . '/..' . '/symfony/polyfill-php73/Resources/stubs/JsonException.php',
+        'Normalizer' => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer/Resources/stubs/Normalizer.php',
         'Pusher' => __DIR__ . '/..' . '/pusher/pusher-php-server/lib/Pusher.php',
         'PusherException' => __DIR__ . '/..' . '/pusher/pusher-php-server/lib/Pusher.php',
         'PusherInstance' => __DIR__ . '/..' . '/pusher/pusher-php-server/lib/Pusher.php',
         'Stringable' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Stringable.php',
+        'UnhandledMatchError' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/UnhandledMatchError.php',
         'ValueError' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/ValueError.php',
         'lessc' => __DIR__ . '/..' . '/wikimedia/less.php/lessc.inc.php',
     );
