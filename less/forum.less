@@ -47,7 +47,13 @@ body when (@config-dark-mode =true) {
 	/* +++++++++++++++++ DIM MODE LAYOUT +++++++++++++++++ */
         .sideNav .Dropdown--select {
 		background: #15202b !important;
-        }
+		}
+	.TagTile.colored,.TagTile.colored a{
+			color: white !important;
+	}
+	.TagTile-lastPostedDiscussion-title{
+		color: white;
+	}
 	.Hero {
 		background: #15202b !important;
 	}
@@ -1036,7 +1042,6 @@ body .Post.CommentPost {
 	/* Change this color to whatever your like */
 }
 
-
 /* +++++++++++++++++ DISABLE PROFILE CLICK +++++++++++++++++*/
 
 .DiscussionListItem-author {
@@ -1089,11 +1094,6 @@ body .Post.CommentPost {
 	.DiscussionListItem-main {
 		padding-bottom: 10px;
 	}
-}
-
-/* +++++++++++++++++ HIDE IMAGE BUTTON +++++++++++++++++*/
-.TextEditor-toolbar .Button--icon[title="Chèn ảnh"] {
- display: none
 }
 
 /* +++++++++++++++++ HIDE TAGS +++++++++++++++++*/
