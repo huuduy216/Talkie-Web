@@ -281,6 +281,7 @@ class ComposerStaticInit88ee21944a6489eec8a793ac5fe51baa
             'Cron\\' => 5,
             'ClarkWinkelmann\\FollowTagsPrompt\\' => 33,
             'ClarkWinkelmann\\EmojioneArea\\' => 29,
+            'ClarkWinkelmann\\AuthorChange\\' => 29,
         ),
         'B' => 
         array (
@@ -953,6 +954,10 @@ class ComposerStaticInit88ee21944a6489eec8a793ac5fe51baa
         array (
             0 => __DIR__ . '/..' . '/clarkwinkelmann/flarum-ext-emojionearea/src',
         ),
+        'ClarkWinkelmann\\AuthorChange\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/clarkwinkelmann/flarum-ext-author-change/src',
+        ),
         'Behat\\Transliterator\\' => 
         array (
             0 => __DIR__ . '/..' . '/behat/transliterator/src/Behat/Transliterator',
@@ -1001,6 +1006,7 @@ class ComposerStaticInit88ee21944a6489eec8a793ac5fe51baa
 
     public static $classMap = array (
         'Attribute' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
+        'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
         'JsonException' => __DIR__ . '/..' . '/symfony/polyfill-php73/Resources/stubs/JsonException.php',
         'Normalizer' => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer/Resources/stubs/Normalizer.php',
         'Pusher' => __DIR__ . '/..' . '/pusher/pusher-php-server/lib/Pusher.php',

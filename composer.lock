@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cc66c2d44811ae5f68353b025f5c3dcb",
+    "content-hash": "bc9e310f828da20bef0dd1606918fadb",
     "packages": [
         {
             "name": "antoinefr/flarum-ext-money",
@@ -323,6 +323,66 @@
                 "transliterator"
             ],
             "time": "2020-01-14T16:39:13+00:00"
+        },
+        {
+            "name": "clarkwinkelmann/flarum-ext-author-change",
+            "version": "0.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/clarkwinkelmann/flarum-ext-author-change.git",
+                "reference": "864ed78357854b8afc08dd5ddf9ea536d1e48f36"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/clarkwinkelmann/flarum-ext-author-change/zipball/864ed78357854b8afc08dd5ddf9ea536d1e48f36",
+                "reference": "864ed78357854b8afc08dd5ddf9ea536d1e48f36",
+                "shasum": ""
+            },
+            "require": {
+                "flarum/core": ">=0.1.0-beta.8 <0.1.0-beta.14"
+            },
+            "replace": {
+                "clarkwinkelmann/flarum-ext-post-date": "*"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-extension": {
+                    "title": "Author Change",
+                    "icon": {
+                        "name": "fas fa-user-edit",
+                        "backgroundColor": "#684ba6",
+                        "color": "#fff"
+                    }
+                },
+                "flagrow": {
+                    "discuss": "https://discuss.flarum.org/d/21731"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "ClarkWinkelmann\\AuthorChange\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Clark Winkelmann",
+                    "email": "clark.winkelmann@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Let mods update the author and date of discussions and posts",
+            "keywords": [
+                "flarum"
+            ],
+            "support": {
+                "issues": "https://github.com/clarkwinkelmann/flarum-ext-author-change/issues",
+                "source": "https://github.com/clarkwinkelmann/flarum-ext-author-change/tree/0.2.0"
+            },
+            "time": "2020-07-10T22:11:40+00:00"
         },
         {
             "name": "clarkwinkelmann/flarum-ext-circle-groups",
@@ -5010,6 +5070,33 @@
                 }
             },
             "description": "Say hello to the world!"
+        },
+        {
+            "name": "huuduy216/alert",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "workbench/alert",
+                "reference": "fc89f3c2e1e5ab9f50a9427d59f52d02c47f86ad"
+            },
+            "require": {
+                "flarum/core": ">=0.1.0-beta.12 <0.1.0-beta.14"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-extension": {
+                    "title": "Alert",
+                    "icon": {
+                        "name": "fas fa-dragon",
+                        "backgroundColor": "#238c59",
+                        "color": "#fff"
+                    }
+                }
+            },
+            "description": "Thanh Quang!",
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "illuminate/bus",
@@ -11735,11 +11822,12 @@
     "stability-flags": {
         "flarum/mentions": 10,
         "huuduy216/addbutton": 20,
+        "huuduy216/alert": 20,
         "luatdolphin/lang-vietnamese": 10
     },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "1.1.0"
+    "plugin-api-version": "2.0.0"
 }

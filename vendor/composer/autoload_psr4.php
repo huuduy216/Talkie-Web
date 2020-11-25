@@ -168,6 +168,7 @@ return array(
     'Cron\\' => array($vendorDir . '/dragonmantank/cron-expression/src/Cron'),
     'ClarkWinkelmann\\FollowTagsPrompt\\' => array($vendorDir . '/clarkwinkelmann/flarum-ext-follow-tags-prompt/src'),
     'ClarkWinkelmann\\EmojioneArea\\' => array($vendorDir . '/clarkwinkelmann/flarum-ext-emojionearea/src'),
+    'ClarkWinkelmann\\AuthorChange\\' => array($vendorDir . '/clarkwinkelmann/flarum-ext-author-change/src'),
     'Behat\\Transliterator\\' => array($vendorDir . '/behat/transliterator/src/Behat/Transliterator'),
     'Base64Url\\' => array($vendorDir . '/spomky-labs/base64url/src'),
     'Askvortsov\\FlarumPWA\\' => array($vendorDir . '/askvortsov/flarum-pwa/src'),

@@ -93,6 +93,7 @@
         "fof/transliterator": "^0.2.0",
         "fof/upload": "^0.10.0",
         "huuduy216/addbutton": "*@dev",
+        "huuduy216/alert": "*@dev",
         "itnt/flarum-uitab": "^0.2.0",
         "jordanjay29/flarum-ext-summaries": "^0.3.1",
         "kvothe/keyboard-shortcuts": "^0.1.0",
