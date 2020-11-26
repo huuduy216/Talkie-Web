@@ -55,7 +55,7 @@ body when (@config-dark-mode =true) {
 	}
     .sideNav .Dropdown--select {
 		background: #15202b !important;
-        }
+	}
 	.Hero {
 		background: #15202b !important;
 	}
@@ -803,7 +803,7 @@ body .Post.CommentPost {
 }
 
 .TagTile a {
-	color: #ffffff;
+	color: #ffffff !important;
 }
 
 .TagTile.colored .TagTile-description {
@@ -882,6 +882,9 @@ body .Post.CommentPost {
 	// }
 }
 
+.container{
+	width: auto;
+}
 
 .TagTile-name {
 	color: #fff;
@@ -1028,7 +1031,6 @@ body .Post.CommentPost {
 	/* Change this color to whatever your like */
 }
 
-
 /* +++++++++++++++++ DISABLE PROFILE CLICK +++++++++++++++++*/
 
 .DiscussionListItem-author {
@@ -1075,14 +1077,100 @@ body .Post.CommentPost {
 	.DiscussionListItem-main {
 		padding-bottom: 15px;
 	}
+	.DiscussionListItem-author {
+		.Avatar {
+			width: 88px !important;
+			height: 88px !important;
+		}
+	}
+	.item-tags {
+		.TagsLabel {
+			padding-left: 8px !important;
+		}
+	}
 }
 
 @media (max-width: 767px) {
 	.DiscussionListItem-main {
 		padding-bottom: 10px;
 	}
+	.DiscussionListItem-author {
+		.Avatar {
+			width: 88px !important;
+			height: 88px !important;
+		}
+	}
+	.item-tags {
+		.TagsLabel {
+			padding-left: 8px !important;
+		}
+	}
+}
+@media (min-width: 1100px) {
+	.container {
+		width: auto;
+		margin-left: 7%;
+		margin-right: 7%;
+	}
+	.DiscussionListItem-info {
+		height: 100px;
+		.item-excerpt {
+			height: 70px;
+			width: 99%;
+		}
+	}
+	.DiscussionListItem-author {
+		.Avatar {
+			width: 100px !important;
+			height: 100px !important;
+		}
+	}
+	.item-tags {
+		.TagsLabel {
+			padding-left: 20px !important;
+		}
+	}
 }
 
+@media (min-width: 992px) and (max-width: 1099px) {
+	.container {
+		width: auto;
+		margin-left: 6%;
+		margin-right: 6%;
+	}
+	.DiscussionListItem-info {
+		height: 95px;
+		.item-excerpt {
+			height: 65px;
+			width: 99%;
+		}
+	}
+	.DiscussionListItem-author {
+		.Avatar {
+			width: 92px !important;
+			height: 92px !important;
+		}
+	}
+	.item-tags {
+		.TagsLabel {
+			padding-left: 12px !important;
+		}
+	}
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+	.container {
+		width: auto;
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+	.DiscussionListItem-info {
+		height: 95px;
+		.item-excerpt {
+			height: 65px;
+		}
+	}
+}
 /* +++++++++++++++++ HIDE IMAGE BUTTON +++++++++++++++++*/
 .TextEditor-toolbar .Button--icon[title="Chèn ảnh"] {
  display: none
