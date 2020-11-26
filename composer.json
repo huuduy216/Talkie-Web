@@ -114,13 +114,8 @@
         "sycho/flarum-profile-cover": "^1.1",
         "therealsujitk/flarum-ext-show-password": "^1.0",
         "v17development/flarum-seo": "^1.1",
-<<<<<<< HEAD
-        "zerosonesfun/hashtags": "^2.1"
-=======
-        "xelson/flarum-ext-chat": "^0.7.3",
         "zerosonesfun/hashtags": "^2.1",
         "joseph280996/alwaysdisplaydiscussionlist": "*@dev"
->>>>>>> 193e3d7f... TAL-15 Add Always Show Suggestion List Extension
     },
     "config": {
         "preferred-install": "dist",
