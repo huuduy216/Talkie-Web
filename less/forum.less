@@ -42,295 +42,306 @@
 /* +++++++++++++++++ Dark mode specific UI +++++++++++++++++*/
 
 body when (@config-dark-mode =true) {
-  @media (max-width: 767px) {
-    .DiscussionListItem-content {
-      border: 1px solid rgb(56, 68, 77) !important;
-
-      background-color: transparent !important;
-
-      box-shadow: 0 1px 10px 0 #15202b !important;
-    }
-  }
-
-  @media (min-width: 768px) {
-    .DiscussionListItem-content {
-      background-color: transparent !important;
-
-      box-shadow: 0 1px 10px 0 #15202b !important;
-
-      -webkit-box-shadow: 0 1px 10px 0 #15202b !important;
-    }
-  }
-
-  /* +++++++++++++++++ DIM MODE LAYOUT +++++++++++++++++ */
-
-  .sideNav .Dropdown--select {
-    background: #15202b !important;
-  }
-
-  .Hero {
-    background: #15202b !important;
-  }
-
-  .Hero-title {
-    color: rgb(255, 255, 255) !important;
-  }
-
-  .App-content {
-    background: #15202b !important;
-  }
-
-  .App:before {
-    background-color: #15202b !important;
-  }
-
-  .Search .FormControl {
-    background-color: #15202b !important;
-  }
-
-  .FormControl {
-    color: #15202b !important;
-  }
-
-  .Search .FormControl {
-    background-color: #253341 !important;
-  }
-
-  /* Dim Button Group */
-
-  .IndexPage-toolbar .Button {
-    background: #21303d !important;
-
-    color: rgb(136, 153, 166) !important;
-  }
-
-  .item-subscription .Button {
-    background: #21303d !important;
-
-    color: rgb(136, 153, 166) !important;
-  }
-
-  .item-share-social .Button {
-    background: #21303d !important;
-
-    color: rgb(136, 153, 166) !important;
-  }
-
-  .Navigation .Button {
-    background: #21303d !important;
-
-    color: rgb(136, 153, 166) !important;
-  }
-
-  .Post-controls .Button {
-    background: #21303d !important;
-
-    color: rgb(136, 153, 166) !important;
-  }
-
-  .Post-actions .Dropdown-menu {
-    background: #21303d !important;
-  }
-
-  .item-controls .Dropdown-menu {
-    background: #21303d !important;
-  }
-
-  .item-subscription .Dropdown-menu {
-    background: #21303d !important;
-  }
-
-  .item-session .Dropdown-menu {
-    background: #21303d !important;
-  }
-
-  .item-sort .Dropdown-menu {
-    background: #21303d !important;
-  }
-
-  .item-fof-upload .Button {
-    background: #21303d !important;
-  }
-
-  .item-preview .Button {
-    background: #21303d !important;
-  }
-
-  .item-changePassword .Button {
-    background: #21303d !important;
-  }
-
-  .item-changeEmail .Button {
-    background: #21303d !important;
-  }
-
-  .DiscussionListItem-controls .Button {
-    background: #21303d !important;
-  }
-
-  .item-notifications .Dropdown-menu {
-    background: #21303d !important;
-  }
-
-  .item-flags .Dropdown-menu {
-    background: #21303d !important;
-  }
-
-  .DiscussionListItem-controls .Dropdown-menu {
-    background: #21303d !important;
-  }
-
-  .App-primaryControl .Dropdown-menu {
-    background: #21303d !important;
-  }
-
-  .Modal-header {
-    background: #21303d !important;
-  }
-
-  .Modal-body {
-    background-color: #15202b !important;
-  }
-
-  .Modal-footer {
-    background-color: #21303d !important;
-  }
-
-  .containerNarrow {
-    color: rgb(136, 153, 166) !important;
-  }
-
-  .sideNav .Dropdown--select .Dropdown-menu>.Dropdown-separator {
-    box-shadow: 0 1px 0px 0 rgb(56, 68, 77) !important;
-  }
-
-  .DiscussionListItem-content {
-    border: 1px solid rgb(56, 68, 77) !important;
-  }
-
-  .DiscussionListItem-info .item-excerpt {
-    color: #aaa !important;
-  }
-
-  .DiscussionListItem-info .item-excerpt {
-    border-bottom: 1px solid rgb(56, 68, 77) !important;
-  }
-
-  .DiscussionList:not(.DiscussionList--searchResults) .read .DiscussionListItem-title {
-    color: #ffff !important;
-  }
-
-  .Dropdown-menu {
-    background: transparent !important;
-  }
-
-  .Scrubber-handle {
-    background: transparent !important;
-  }
-
-  .Post.CommentPost {
-    border: 1px solid rgb(56, 68, 77) !important;
-  }
-
-  .ReplyPlaceholder {
-    border: 1px dashed #aaa !important;
-  }
-
-  .DiscussionHero-title {
-    color: #fff !important;
-  }
-
-  .Header-secondary .Button {
-    color: rgb(136, 153, 166) !important;
-  }
-
-  .Button-label .username {
-    color: #fff !important;
-  }
-
-  .UserBio {
-    color: #aaa;
-  }
-
-  .username {
-    color: #aaa;
-  }
-
-  .Button--primary {
-    color: #fff !important;
-  }
-
-  .Composer {
-    background: #21303d !important;
-  }
-
-  .FormControl {
-    background-color: #21303d !important;
-
-    color: #aaa !important;
-  }
-
-  .FormControl:focus,
-  .FormControl.focus {
-    background-color: #21303d !important;
-  }
-
-  .DiscussionListItem:hover {
-    background: #21303d !important;
-  }
-
-  .UserCard-lastSeen {
-    color: #aaa !important;
-  }
-
-  .item-joined {
-    color: #aaa !important;
-  }
-
-  .NotificationGrid {
-    background: #21303d !important;
-
-    color: #aaa !important;
-  }
-
-  .NotificationList.DraftsList {
-    background: #21303d !important;
-
-    color: #fff !important;
-  }
-
-  .App-backControl .Button:hover,
-  .Button:focus,
-  .Button.focus {
-    background-color: transparent !important;
-  }
-
-  .App-navigation .Navigation .Button {
-    background-color: transparent !important;
-  }
-
-  .App-titleControl .Button {
-    color: #aaa !important;
-  }
-
-  .Slidable .Slidable-underneath {
-    background: #21303d !important;
-  }
-
-  .DiscussionList-loadMore .Button {
-    background: #21303d !important;
-  }
-
-  .DiscussionListItem {
-    background: #15202b !important;
-  }
-
-  .DiscussionListItem.active {
-    background: #21303d !important;
-  }
-
-  .DiscussionPage-list {
-    border: 1px solid rgb(56, 68, 77) !important;
+	@media (max-width: 767px) {
+		.DiscussionListItem-content {
+			border: 1px solid rgb(56, 68, 77) !important;
+			background-color: transparent !important;
+			box-shadow: 0 1px 10px 0 #15202b !important;
+		}
+	}
+	@media (min-width: 768px) {
+		.DiscussionListItem-content {
+			background-color: transparent !important;
+			box-shadow: 0 1px 10px 0 #15202b !important;
+			-webkit-box-shadow: 0 1px 10px 0 #15202b !important;
+		}
+	}
+
+	/* +++++++++++++++++ DIM MODE LAYOUT +++++++++++++++++ */
+	.Header-logo {
+		position: relative;
+		z-index: -1;
+	}
+	#home-link {
+		background-image: url("/background/logo_darkmode.png")!important;
+		background-size: 100%;
+	}
+    .sideNav .Dropdown--select {
+		background: #15202b !important;
+        }
+	.Hero {
+		background: #15202b !important;
+	}
+	.Hero-title {
+		color: rgb(255, 255, 255) !important;
+	}
+	.App-content {
+		background: #15202b !important;
+	}
+	.App:before {
+		background-color: #15202b !important;
+	}
+	.Search .FormControl {
+		background-color: #15202b !important;
+	}
+	.FormControl {
+		color: #15202b !important;
+	}
+	.Search .FormControl {
+		background-color: #253341 !important;
+	}
+	/* Dim Button Group */
+	.IndexPage-toolbar .Button {
+		background: #21303d !important;
+		color: rgb(136, 153, 166) !important;
+	}
+	.item-subscription .Button {
+		background: #21303d !important;
+		color: rgb(136, 153, 166) !important;
+	}
+	.item-share-social .Button {
+		background: #21303d !important;
+		color: rgb(136, 153, 166) !important;
+	}
+	.Navigation .Button {
+		background: #21303d !important;
+		color: rgb(136, 153, 166) !important;
+	}
+	.Post-controls .Button {
+		background: #21303d !important;
+		color: rgb(136, 153, 166) !important;
+	}
+	.Post-actions .Dropdown-menu {
+		background: #21303d !important;
+	}
+	.item-controls .Dropdown-menu {
+		background: #21303d !important;
+	}
+	.item-subscription .Dropdown-menu {
+		background: #21303d !important;
+	}
+	.item-session .Dropdown-menu {
+		background: #21303d !important;
+	}
+	.item-sort .Dropdown-menu {
+		background: #21303d !important;
+	}
+	.item-fof-upload .Button {
+		background: #21303d !important;
+	}
+	.item-preview .Button {
+		background: #21303d !important;
+	}
+	.item-changePassword .Button {
+		background: #21303d !important;
+	}
+	.item-changeEmail .Button {
+		background: #21303d !important;
+	}
+	.DiscussionListItem-controls .Button {
+		background: #21303d !important;
+	}
+	.item-notifications .Dropdown-menu {
+		background: #21303d !important;
+	}
+	.item-flags .Dropdown-menu {
+		background: #21303d !important;
+	}
+	.DiscussionListItem-controls .Dropdown-menu {
+		background: #21303d !important;
+	}
+	.App-primaryControl .Dropdown-menu {
+		background: #21303d !important;
+	}
+	.Modal-header {
+		background: #21303d !important;
+	}
+	.Modal-body {
+		background-color: #15202b !important;
+	}
+	.Modal-footer {
+		background-color: #21303d !important;
+	}
+	.containerNarrow {
+		color: rgb(136, 153, 166) !important;
+	}
+	.sideNav .Dropdown--select .Dropdown-menu>.Dropdown-separator {
+		box-shadow: 0 1px 0px 0 rgb(56, 68, 77) !important;
+	}
+	.DiscussionListItem-content {
+		border: 1px solid rgb(56, 68, 77) !important;
+	}
+	.DiscussionListItem-info .item-excerpt {
+		color: #aaa !important;
+	}
+	.DiscussionListItem-info .item-excerpt {
+		border-bottom: 1px solid rgb(56, 68, 77) !important;
+	}
+	.DiscussionList:not(.DiscussionList--searchResults) .read .DiscussionListItem-title {
+		color: #ffff !important;
+	}
+	.Dropdown-menu {
+		background: transparent !important;
+	}
+	.Scrubber-handle {
+		background: transparent !important;
+	}
+	.Post.CommentPost {
+		border: 1px solid rgb(56, 68, 77) !important;
+	}
+	.ReplyPlaceholder {
+		border: 1px dashed #aaa !important;
+	}
+	.DiscussionHero-title {
+		color: #fff !important;
+	}
+	.Header-secondary .Button {
+		color: rgb(136, 153, 166) !important;
+	}
+	.Button-label .username {
+		color: #fff !important;
+	}
+	.UserBio {
+		color: #aaa;
+	}
+	.username {
+		color: #aaa;
+	}
+	.Button--primary {
+		color: #fff !important;
+	}
+	.Composer {
+		background: #21303d !important;
+	}
+	.FormControl {
+		background-color: #21303d !important;
+		color: #aaa !important;
+	}
+	.FormControl:focus,
+	.FormControl.focus {
+		background-color: #21303d !important;
+	}
+	.DiscussionListItem:hover {
+		background: #21303d !important;
+	}
+	.UserCard-lastSeen {
+		color: #aaa !important;
+	}
+	.item-joined {
+		color: #aaa !important;
+	}
+	.NotificationGrid {
+		background: #21303d !important;
+		color: #aaa !important;
+	}
+	.NotificationList.DraftsList {
+		background: #21303d !important;
+		color: #fff !important;
+	}
+	.App-backControl .Button:hover,
+	.Button:focus,
+	.Button.focus {
+		background-color: transparent !important;
+	}
+	.App-navigation .Navigation .Button {
+		background-color: transparent !important;
+	}
+	.App-titleControl .Button {
+		color: #aaa !important;
+	}
+	.Slidable .Slidable-underneath {
+		background: #21303d !important;
+	}
+	.DiscussionList-loadMore .Button {
+		background: #21303d !important;
+	}
+	.DiscussionListItem {
+		background: #15202b !important;
+	}
+	.DiscussionListItem.active {
+		background: #21303d !important;
+	}
+	.DiscussionPage-list {
+		border: 1px solid rgb(56, 68, 77) !important;
+		background: #15202b !important;
+	}
+	.App-drawer {
+		background: #21303d !important;
+	}
+	#header-secondary>ul>li.item-signUp>button[title='Kaydol'] {
+		color: #fff !important;
+	}
+	#header-secondary>ul>li.item-logIn>button[title='Giriþ Yap'] {
+		color: rgb(255, 255, 255) !important;
+	}
+	.item-AnswerPost {
+		background: rgba(88, 200, 0, 0.15) !important;
+	}
+	.Post-body {
+		color: white !important;
+	}
+	.TagLabel.colored .TagLabel-text {
+		color: none !important;
+	}
+	.DiscussionHero .TagsLabel .TagLabel.colored {
+		background: #21303d !important;
+	}
+	.Search-results {
+		background: #21303d !important;
+	}
+	.TagCategory.SubCategory .TagCategory-content {
+		background-color: #21303d !important;
+	}
+	.Hero-subtitle {
+		color: #8899a6;
+	}
+	.TagsPage-content .TagTiles>li.TagTile {
+		background: transparent !important;
+		border: 1px solid rgb(56, 68, 77) !important;
+		color: #fff !important;
+		box-shadow: 0 1px 10px 0 #15202b !important;
+	}
+	.TagTile,
+	.TagTile a {
+		color: #939fae;
+	}
+	.UserDirectoryList .UserCard--directory {
+		box-shadow: 0 1px 10px 0 #15202b !important;
+		border: 1px solid rgb(56, 68, 77) !important;
+	}
+	// Unlogged users alert message
+	.CantSeePastFirstPost {
+		background: #1b2028;
+		color: #6c7d93;
+	}
+	// Chat night mode
+	.chat .frame .wrapper .message-wrapper:nth-child(odd) {
+		background: #14191f !important;
+	}
+	.chat .frame .wrapper .message-wrapper {
+		background: #1b2028 !important;
+	}
+	.chat .frame .wrapper .message-wrapper .message-block .UserMention {
+		color: #7c7c7c;
+	}
+	.chat .frame .wrapper .message-wrapper .message-block .toolbar .name {
+		color: #aaaaaa !important;
+	}
+	.chat {
+		color: #aaaaaa !important;
+	}
+	.chat .frame .input-wrapper #chat-input {
+		background: #1b2028 !important;
+		color: #7c7c7c !important;
+	}
+	.chat .frame .input-wrapper,
+	.chat .frame {
+		background: #14191f !important;
+	}
+	.chat .frame #chat-header {
+		background-color: #1b2028 !important;
+	}
+}
 
     background: #15202b !important;
   }
