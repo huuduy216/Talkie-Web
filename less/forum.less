@@ -62,6 +62,12 @@ body when (@config-dark-mode =true) {
 		position: relative;
 		z-index: -1;
 	}
+	.TagTile.colored.TagTile.colored a{
+		color: #6c7d93 !important;
+	}
+	.TagTile-lastPostedDiscussion-title{
+		color: #6c7d93;
+	}
 	#home-link {
 		background-image: url("/background/logo_darkmode.png")!important;
 		background-size: 100%;
@@ -808,9 +814,16 @@ body .Post.CommentPost {
 }
 
 .TagTiles>li {
-  border-radius: 6px !important;
-  margin: 10px !important;
-  height: 200px !important;
+	border-radius: 6px !important;
+	margin: 10px !important;
+	height: 220px !important;
+	width: 37%;
+}
+@media @phone {
+	.TagTiles>li {
+		height:210px !important;
+		width: 96%;
+	}
 }
 
 .TagTiles>li:last-child {
