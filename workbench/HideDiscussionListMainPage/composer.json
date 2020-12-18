@@ -1,0 +1,18 @@
+{
+    "name": "joseph280996/alwaysdisplaydiscussionlist",
+    "description": "Always Show Suggestion List",
+    "type": "flarum-extension",
+    "require": {
+        "flarum/core": ">=0.1.0-beta.12 <0.1.0-beta.14"
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "Always Show Suggestion List",
+            "icon": {
+                "name": "fas fa-smile",
+                "backgroundColor": "#238c59",
+                "color": "#fff"
+            }
+        }
+    }
+}

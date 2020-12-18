@@ -4,3 +4,5 @@ config.php
 public/assets/
 
 storage/*
+
+**/node_modules/*
