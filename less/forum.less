@@ -1058,6 +1058,68 @@ body .Post.CommentPost {
   outline: none;
 }
 
+/* Phone buttons */
+.fa-home:before {
+	vertical-align: super;
+}
+.fa-tags:before {
+	vertical-align: super;
+}
+.fa-edit:before {
+	vertical-align: super;
+}
+.fa-user-cog:before {
+	vertical-align: super;
+}
+.fa-bell:before {
+	vertical-align: super;
+}
+.mobile-app-icon-bar {
+	.buttonstyle {
+		width: 101% !important;
+	}
+	button.buttonstyle {
+		background-position-x: center;
+		background-repeat: no-repeat;
+		vertical-align: super;
+	}
+	a:nth-child(1){
+		button.buttonstyle {
+			background-image: url('/public/Phone-button/home.png') !important;
+			background-position-y: 30%;
+			background-size: 47px;
+		}
+	}
+	a:nth-child(2){
+		button.buttonstyle {
+			background-image: url('/public/Phone-button/tags.png') !important;
+			background-position-y: 42%;
+			background-size: 44px;
+		}
+	}
+	a:nth-child(3){
+		button.buttonstyle {
+			background-image: url('/public/Phone-button/edit.png') !important;
+			background-position-y: 33%;
+			background-size: 68px;
+		}
+	}
+	a:nth-child(4){
+		button.buttonstyle {
+			background-image: url('/public/Phone-button/user-cog.png') !important;
+			background-position-y: 24%;
+			background-size: 45px;
+		}
+	}
+	a:nth-child(5){
+		button.buttonstyle {
+			background-image: url('/public/Phone-button/bell.png') !important;
+			background-position-y: 25%;
+			background-size: 54px;
+		}
+	}
+}
+
 .mobile-app-icon-bar .buttonstyle:active {
   background: #c56a74;
   /* Change this color to whatever your like */
