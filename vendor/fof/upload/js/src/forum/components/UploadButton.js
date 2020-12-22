@@ -79,6 +79,11 @@ export default class UploadButton extends Component {
      */
     failure(message) {
         alert(app.translator.trans('fof-upload.forum.states.error'));
+        setTimeout(() => {
+            this.$('form')[0].reset();
+            this.uploading(false);
+            m.redraw();
+        }, 1000);
     }
 
     /**
