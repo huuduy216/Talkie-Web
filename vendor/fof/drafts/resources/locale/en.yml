@@ -21,6 +21,7 @@ fof-drafts:
       empty_text: You haven't saved any drafts
       title: Drafts
       delete_button: Delete Draft
+      delete_button1: Xóa tất cả bản nháp
       schedule_button: Schedule Draft
       tooltip: => fof-drafts.forum.dropdown.title
       alert: Are you sure you want to delete your draft?

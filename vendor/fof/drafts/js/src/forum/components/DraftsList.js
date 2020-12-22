@@ -54,6 +54,33 @@ export default class DraftsList extends Component {
                                                   </span>
                                                   {humanTime(draft.updatedAt())}
                                                   {Button.component({
+                                                      icon: 'fas fa-trash-alt',
+                                                      style: 'float: right; z-index: 20;',
+                                                      className: 'Button Button--icon Button--link draft--deleteAll draft--deleteAll',
+                                                      title: app.translator.trans('fof-drafts.forum.dropdown.delete_button1'),
+                                                      onclick: (e) => {
+                                                        var promise = [];
+                                                        drafts.forEach((draft) =>
+                                                            promise.push(
+                                                                draft.delete().then(() => {
+                                                                    if (
+                                                                        app.composer.component &&
+                                                                        app.composer.component.draft.id() ===  drafts[element].id() &&
+                                                                        !app.composer.changed()
+                                                                    ) {
+                                                                        app.composer.hide();
+                                                                   }
+                                                                })
+                                                            )
+                                                        );
+                                                        Promise.all(promise).then(() => {
+                                                            this.loading = false;
+                                                            m.redraw();
+                                                        });
+                                                          e.stopPropagation();
+                                                      },
+                                                  })}
+                                                  {Button.component({
                                                       icon: 'fas fa-times',
                                                       style: 'float: right; z-index: 20;',
                                                       className: 'Button Button--icon Button--link draft--delete draft--delete',
