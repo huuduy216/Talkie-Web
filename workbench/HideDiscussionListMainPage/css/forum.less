@@ -1,0 +1,29 @@
+.App-content.mr-0{
+  margin-right:0px;
+}
+
+@media (min-width: 1100px) {
+  .App-content {
+    margin-left: 0px;
+    margin-right: 400px;
+  }
+
+  .DiscussionPage-list {
+    bottom: 0;
+    right: 0;
+    left: auto;
+  }
+
+  .hasPane.panePinned .App-content,
+  .hasPane.panePinned .App-footer {
+    margin-left: 0;
+  }
+
+  .paneShowing,
+  .panePinned {
+    .DiscussionPage-list {
+      left: auto;
+      right: 0;
+    }
+  }
+}

@@ -1,33 +1,46 @@
+
 @media (max-width: 767px) {
-	.App-content {
-		background: #eff3f7;
-	}
+  .App-content {
+    background: #eff3f7;
+  }
 }
+
+
 
 @media (min-width: 767px) {
-	.sideNav .Dropdown--select {
-		background: #fff;
-		padding-left: 15px;
-		padding-right: 15px;
-		padding-top: 5px;
-		padding-bottom: 5px;
-		border-radius: 6px;
-	}
+  .sideNav .Dropdown--select {
+    background: #fff;
+    padding:5px 15px;
+    border-radius: 6px;
+  }
+
+  .DiscussionPage {
+    &-nav {
+      float: left;
+    }
+
+    &-stream {
+      margin-right: 0;
+
+      margin-left: 225px;
+    }
+  }
 }
 
 @media @phone {
-	.SelectTagListItem-description {
-		display: inline-block !important;
-	}
+  .SelectTagListItem-description {
+    display: inline-block !important;
+  }
 }
 
 @media @phone {
-	.MentionsDropdown {
-		max-width: 100%;
-	}
+  .MentionsDropdown {
+    max-width: 100%;
+  }
 }
 
 /* +++++++++++++++++ Dark mode specific UI +++++++++++++++++*/
+
 body when (@config-dark-mode =true) {
 	@media (max-width: 767px) {
 		.DiscussionListItem-content {
@@ -43,11 +56,23 @@ body when (@config-dark-mode =true) {
 			-webkit-box-shadow: 0 1px 10px 0 #15202b !important;
 		}
 	}
+	.item-preview-discussion {
+		#preview-discussion {
+			background: rgb(33, 48, 61) !important;
+			color: #aaaaaa !important;
+		}
+	}
 
 	/* +++++++++++++++++ DIM MODE LAYOUT +++++++++++++++++ */
 	.Header-logo {
 		position: relative;
 		z-index: -1;
+	}
+	.TagTile.colored.TagTile.colored a{
+		color: #6c7d93 !important;
+	}
+	.TagTile-lastPostedDiscussion-title{
+		color: #6c7d93;
 	}
 	#home-link {
 		background-image: url("/background/logo_darkmode.png")!important;
@@ -332,474 +357,483 @@ body when (@config-dark-mode =true) {
 
 
 body .Post.CommentPost {
-	background-color: transparent !important;
-	webkit-box-shadow: 0 1px 10px 0 #15202b !important;
+  background-color: transparent !important;
+  webkit-box-shadow: 0 1px 10px 0 #15202b !important;
 }
 
 .body {
-	background: #15202b !important;
+  background: #15202b !important;
 }
 
 @media (min-width: 768px) {
-	.sideNav,
-	.sideNav>ul {
-		width: 205px;
-	}
+  .sideNav,
+  .sideNav>ul {
+    width: 205px;
+  }
 }
 
 .Post.CommentPost {
-	background-color: #fff !important;
-	border-radius: 8px;
-	margin-top: 20px;
-	-webkit-box-shadow: 0 1px 10px 0 rgba(151, 158, 181, 0.28) !important;
-	box-shadow: 0 1px 10px 0 rgba(151, 158, 181, 0.28) !important;
+  background-color: #fff !important;
+  border-radius: 8px;
+  margin-top: 20px;
+  -webkit-box-shadow: 0 1px 10px 0 rgba(151, 158, 181, 0.28) !important;
+  box-shadow: 0 1px 10px 0 rgba(151, 158, 181, 0.28) !important;
 }
 
 .UserDirectoryList .UserCard--directory .Dropdown-menu {
-	z-index: 1020 !important;
+  z-index: 1020 !important;
 }
 
 .UserDirectoryList .spinner {
-	display: none;
+  display: none;
 }
 
 .PostsUserPage-list {
-	.Post {
-		// quick fix for tablets
-		margin-right: 0;
-	}
+  .Post {
+    // quick fix for tablets
+    margin-right: 0;
+  }
 }
 
 .Post {
-	// quick fix for tablets 
-	@media @tablet-up {
-		margin-left: 0;
-	}
+  // quick fix for tablets
+  @media @tablet-up {
+    margin-left: 0;
+  }
 }
 
 @media (max-width: 767px) {
-	.DiscussionPage-nav {
-		border-bottom: none;
-	}
+  .DiscussionPage-nav {
+    border-bottom: none;
+  }
 }
 
 @media (min-width: 768px) {
-	.item-recipients {
-		margin-left: 10px;
-	}
+  .item-recipients {
+    margin-left: 10px;
+  }
 }
 
 @media (min-width: 768px) {
-	.IndexPage .DiscussionListItem-info>.item-tags,
-	.UserPage .DiscussionListItem-info>.item-tags {
-		margin-right: 0;
-		position: absolute;
-		left: 100px;
-		top: unset !important;
-		max-width: 500px !important;
-		white-space: nowrap;
-		overflow: hidden;
-		transition: max-width 0.2s ease-in-out, -webkit-mask-image 0.2s;
-		font-size: 13px !important;
-		bottom: 14px;
-		-webkit-mask-image: initial !important;
-	}
+  .IndexPage .DiscussionListItem-info>.item-tags,
+  .UserPage .DiscussionListItem-info>.item-tags {
+    margin-right: 0;
+    position: absolute;
+    left: 100px;
+    top: unset !important;
+    max-width: 500px !important;
+    white-space: nowrap;
+    overflow: hidden;
+    transition: max-width 0.2s ease-in-out, -webkit-mask-image 0.2s;
+    font-size: 13px !important;
+    bottom: 14px;
+    -webkit-mask-image: initial !important;
+  }
 }
 
 @media (min-width: 768px) {
-	.DiscussionListItem-author .Avatar {
-		width: 40px;
-		height: 40px;
-		border-radius: 40px;
-		font-size: 20px;
-		line-height: 40px;
-	}
+  .DiscussionListItem-author .Avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    font-size: 20px;
+    line-height: 40px;
+  }
 }
 
 @media (min-width: 768px) {
-	.DiscussionListItem-title {
-		font-size: 17px;
-		font-weight: 600;
-	}
+  .DiscussionListItem-title {
+    font-size: 17px;
+    font-weight: 600;
+  }
 }
 
 @media (min-width: 992px) {
-	.DiscussionListItem-count:before {
-		-moz-osx-font-smoothing: grayscale;
-		-webkit-font-smoothing: antialiased;
-		display: inline-block;
-		font-style: normal;
-		font-variant: normal;
-		text-rendering: auto;
-		line-height: 1;
-		font-family: 'Font Awesome 5 Free';
-		font-weight: 400;
-		content: '\f27a';
-		float: left;
-		margin-left: -21px;
-		margin-top: 4px;
-	}
+  .DiscussionListItem-count:before {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+    content: "\f27a";
+    float: left;
+    margin-left: -21px;
+    margin-top: 4px;
+  }
 }
 
 @media (min-width: 768px) {
-	.DiscussionListItem-badges {
-		margin-left: 0px;
-		position: absolute;
-		right: 40px;
-	}
+  .DiscussionListItem-badges {
+    margin-left: 0px;
+    position: absolute;
+    right: 40px;
+  }
 }
 
 @media (min-width: 767px) {
-	.DiscussionListItem-info .item-excerpt {
-		margin-left: 0;
-		padding-bottom: 8px;
-		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-		margin-right: -40px !important;
-	}
+  .DiscussionListItem-info .item-excerpt {
+    margin-left: 0;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    margin-right: -40px !important;
+  }
 }
 
 @media (min-width: 768px) {
-	.item-discussion-views {
-		margin-right: -50px !important;
-		float: left;
-		margin-top: 68px;
-		position: absolute;
-		right: 100px;
-		bottom: 13px;
-		color: #667c99;
-	}
+  .item-discussion-views {
+    margin-right: -50px !important;
+    float: left;
+    margin-top: 68px;
+    position: absolute;
+    right: 100px;
+    bottom: 13px;
+    color: #667c99;
+  }
 }
 
 @media (min-width: 768px) {
-	.DiscussionListItem-count {
-		float: right;
-		margin-top: 12px;
-		text-decoration: none;
-		position: absolute;
-		right: 145px;
-		bottom: 15px;
-		padding-left: 0px !important;
-		line-height: normal;
-	}
+  .DiscussionListItem-count {
+    float: right;
+    margin-top: 12px;
+    text-decoration: none;
+    position: absolute;
+    right: 145px;
+    bottom: 15px;
+    padding-left: 0px !important;
+    line-height: normal;
+  }
 }
 
 @media (max-width: 767px) {
-	.DiscussionListItem-badges {
-		margin-left: 0px;
-		position: absolute;
-		right: 10px;
-	}
-	.DiscussionListItem-info .item-excerpt {
-		margin-right: -30px !important;
-		white-space: normal !important;
-		font-size: 14px !important;
-		line-height: 1.5em !important;
-		margin-bottom: 25px !important;
-		color: #3a3a3a !important;
-		display: block !important;
-		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-		padding-bottom: 5px;
-		overflow: hidden;
-		height: 45px;
-	}
-	.DiscussionListItem-content {
-		padding-left: 60px;
-		padding-right: 50px;
-		margin: 10px;
-		margin-bottom: 15px;
-		border-radius: 6px;
-		box-shadow: 0 1px 10px 0 rgba(151, 158, 181, 0.28) !important;
-		background: #fff !important;
-	}
-	.DiscussionListItem-info>.item-tags {
-		margin-right: 4px;
-		opacity: 1;
-		position: absolute;
-		left: 100px;
-		bottom: 12px;
-		-webkit-mask-image: linear-gradient( to right, #000 140px, rgba(0, 0, 0, 0) 150px);
-		overflow-x: hidden;
-		width: 140px;
-	}
-	.DiscussionListItem-title {
-		margin-right: 0;
-		font-weight: 600;
-	}
-	.DiscussionListItem-info {
-		overflow: unset !important;
-	}
-	.DiscussionListItem-count {
-		background: transparent !important;
-		font-size: 14px;
-		position: absolute;
-		bottom: 6px;
-		right: 45px;
-	}
-	.DiscussionListItem-count:before {
-		font-family: 'Font Awesome 5 Free';
-		display: inline-block;
-		line-height: 1;
-		content: '\f27a';
-		float: left;
-		margin-left: -21px;
-		margin-top: 4px;
-	}
-	.DiscussionListItem-info>.item-recipients {
-		margin-right: 40%;
-		opacity: 1;
-		position: absolute;
-		right: 10px;
-		bottom: 10px;
-	}
-	.item-discussion-views {
-		font-size: 14px !important;
-		bottom: 6px;
-		left: 73%;
-		position: absolute;
-		color: #667c99;
-		top: unset !important;
-		background: transparent !important;
-	}
-	.item-discussion-views:before {
-		display: inline-block;
-		font-family: 'Font Awesome 5 Free';
-		font-size: inherit;
-		text-rendering: auto;
-		content: '\f06e';
-		float: left;
-		margin-left: -21px;
-		margin-top: 0;
-	}
-	.unread .DiscussionListItem-count {
-		background: transparent !important;
-		color: #de4b5d;
-	}
+  .DiscussionListItem-badges {
+    margin-left: 0px;
+    position: absolute;
+    right: 10px;
+  }
+  .DiscussionListItem-info .item-excerpt {
+    margin-right: -30px !important;
+    white-space: normal !important;
+    font-size: 14px !important;
+    line-height: 1.5em !important;
+    margin-bottom: 25px !important;
+    color: #3a3a3a !important;
+    display: block !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 5px;
+    overflow: hidden;
+    height: 45px;
+  }
+  .DiscussionListItem-content {
+    padding-left: 60px;
+    padding-right: 50px;
+    margin: 10px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    box-shadow: 0 1px 10px 0 rgba(151, 158, 181, 0.28) !important;
+    background: #fff !important;
+  }
+  .DiscussionListItem-info>.item-tags {
+    margin-right: 4px;
+    opacity: 1;
+    position: absolute;
+    left: 100px;
+    bottom: 12px;
+    -webkit-mask-image: linear-gradient(to right,
+        #000 140px,
+        rgba(0, 0, 0, 0) 150px);
+    overflow-x: hidden;
+    width: 140px;
+  }
+  .DiscussionListItem-title {
+    margin-right: 0;
+    font-weight: 600;
+  }
+  .DiscussionListItem-info {
+    overflow: unset !important;
+  }
+  .DiscussionListItem-count {
+    background: transparent !important;
+    font-size: 14px;
+    position: absolute;
+    bottom: 6px;
+    right: 45px;
+  }
+  .DiscussionListItem-count:before {
+    font-family: "Font Awesome 5 Free";
+    display: inline-block;
+    line-height: 1;
+    content: "\f27a";
+    float: left;
+    margin-left: -21px;
+    margin-top: 4px;
+  }
+  .DiscussionListItem-info>.item-recipients {
+    margin-right: 40%;
+    opacity: 1;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+  }
+  .item-discussion-views {
+    font-size: 14px !important;
+    bottom: 6px;
+    left: 73%;
+    position: absolute;
+    color: #667c99;
+    top: unset !important;
+    background: transparent !important;
+  }
+  .item-discussion-views:before {
+    display: inline-block;
+    font-family: "Font Awesome 5 Free";
+    font-size: inherit;
+    text-rendering: auto;
+    content: "\f06e";
+    float: left;
+    margin-left: -21px;
+    margin-top: 0;
+  }
+  .unread .DiscussionListItem-count {
+    background: transparent !important;
+    color: #de4b5d;
+  }
 }
 
 .DiscussionList-update {
-	color: #fff !important;
-	background: #de4b5d !important;
+  color: #fff !important;
+  background: #de4b5d !important;
 }
 
 @media (min-width: 768px) {
-	.DiscussionListItem-content {
-		padding-left: 80px;
-		padding-right: 80px;
-		padding-top: 10px;
-		border-radius: 6px;
-		padding-bottom: 20px;
-		border: 1px solid rgba(0, 0, 0, 0.1);
-		background-color: #fff !important;
-		-webkit-box-shadow: 0 1px 10px 0 rgba(151, 158, 181, 0.28) !important;
-		box-shadow: 0 1px 10px 0 rgba(151, 158, 181, 0.28) !important;
-	}
-	.DiscussionListItem {
-		position: relative;
-		margin-right: 0;
-		padding-right: 0;
-		padding-left: 0;
-		margin-left: 0;
-		border-radius: 6px;
-		margin-top: 20px;
-	}
+  .DiscussionListItem-content {
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 10px;
+    border-radius: 6px;
+    padding-bottom: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #fff !important;
+    -webkit-box-shadow: 0 1px 10px 0 rgba(151, 158, 181, 0.28) !important;
+    box-shadow: 0 1px 10px 0 rgba(151, 158, 181, 0.28) !important;
+  }
+  .DiscussionListItem {
+    position: relative;
+    margin-right: 0;
+    padding-right: 0;
+    padding-left: 0;
+    margin-left: 0;
+    border-radius: 6px;
+    margin-top: 20px;
+  }
 }
 
 .unread .DiscussionListItem-title:after {
-	font-family: 'Font Awesome 5 Free';
-	font-weight: 600;
-	font-size: 14px;
-	content: '\f666';
-	color: #de4b5d;
-	margin-left: 6px;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  font-size: 14px;
+  content: "\f666";
+  color: #de4b5d;
+  margin-left: 6px;
 }
 
 .sideNav .Dropdown--select .Dropdown-menu>li>a {
-	font-weight: 600;
+  font-weight: 600;
 }
 
 .Hero h2 {
-	font-size: 25px;
-	font-weight: 700;
+  font-size: 25px;
+  font-weight: 700;
 }
 
 .DiscussionHero-title {
-	color: #282828 !important;
+  color: #282828 !important;
 }
 
 .Hero {
-	box-shadow: 0 1px 10px 0 rgba(151, 158, 181, 0.28) !important;
-	background-color: #fff !important;
-	margin-bottom: 15px;
+  box-shadow: 0 1px 10px 0 rgba(151, 158, 181, 0.28) !important;
+  background-color: #fff !important;
+  margin-bottom: 15px;
 }
 
 .DiscussionHero .TagsLabel .TagLabel {
-	color: #4d698e;
-	font-size: 18px !important;
+  color: #4d698e;
+  font-size: 18px !important;
 }
 
 .DiscussionHero .RecipientsLabel .RecipientLabel {
-	color: #000;
+  color: #000;
 }
 
 .Hero h2 {
-	color: #282828;
+  color: #282828;
 }
 
 .Hero-subtitle {
-	color: #000;
+  color: #000;
 }
 
 .Scrubber-handle {
-	background-color: transparent !important;
+  background-color: transparent !important;
 }
 
 .Search-input input {
-	border-radius: 30px;
+  border-radius: 30px;
 }
 
 .Post-body {
-	font-size: 15px;
+  font-size: 15px;
 }
 
 .DiscussionList-loadMore button {
-	width: 50%;
-	border-radius: 30px;
-	margin-top: 30px;
+  width: 50%;
+  border-radius: 30px;
+  margin-top: 30px;
 }
 
 .sideNav .Dropdown--select .Dropdown-menu>.Dropdown-separator {
-	border-bottom: 1.5px solid #de4b5d;
+  border-bottom: 1.5px solid #de4b5d;
 }
 
 .Button {
-	border-radius: 30px;
+  border-radius: 30px;
 }
 
 .item-like .Button:before {
-	font-family: 'Font Awesome 5 Free';
-	font-weight: 600;
-	font-size: 15px;
-	content: '\f164';
-	margin-right: 8px;
-	vertical-align: -1px;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  font-size: 15px;
+  content: "\f164";
+  margin-right: 8px;
+  vertical-align: -1px;
 }
 
 .item-reply .Button--link:before {
-	font-family: 'Font Awesome 5 Free';
-	font-weight: 600;
-	font-size: 15px;
-	content: '\f3e5';
-	margin-right: 8px;
-	vertical-align: -1px;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  font-size: 15px;
+  content: "\f3e5";
+  margin-right: 8px;
+  vertical-align: -1px;
 }
 
 .DiscussionListItem-info .item-excerpt {
-	color: #696969 !important;
-	font-size: 14px !important;
+  color: #696969 !important;
+  font-size: 14px !important;
 }
 
 .PostStream-item:not(:last-child) {
-	border-bottom: none;
+  border-bottom: none;
 }
 
 .UserCard .Button {
-	color: #667c99;
-	background: rgba(0, 0, 0, 0.1);
+  color: #667c99;
+  background: rgba(0, 0, 0, 0.1);
 }
 
 .UserDirectoryList .UserCard--directory {
-	box-shadow: 0 1px 10px 0 rgba(151, 158, 181, 0.28) !important;
-	background-color: transparent !important;
-	margin-bottom: 15px !important;
-	border-radius: 6px !important;
+  box-shadow: 0 1px 10px 0 rgba(151, 158, 181, 0.28) !important;
+  background-color: transparent !important;
+  margin-bottom: 15px !important;
+  border-radius: 6px !important;
 }
 
 .social-settings>.fa-cog {
-	border-left: 1px solid #1b2028 !important;
+  border-left: 1px solid #1b2028 !important;
 }
 
 .Badge--social {
-	color: #4d698e !important;
+  color: #4d698e !important;
 }
 
 .app2 {
-	width: 190px;
-	padding-top: 5px;
-	padding-bottom: 10px;
-	display: block;
-	text-align: center;
-	padding-left: 15px;
+  width: 190px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  display: block;
+  text-align: center;
+  padding-left: 15px;
 }
 
 .text-holder {
-	width: 190px;
-	font-size: 12px;
-	font-weight: 500;
-	text-align: center;
+  width: 190px;
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
 }
 
 .text-holder ul {
-	width: 190px;
-	list-style: none;
-	float: left;
-	margin-bottom: 10px;
-	padding: 0;
+  width: 190px;
+  list-style: none;
+  float: left;
+  margin-bottom: 10px;
+  padding: 0;
 }
 
 .text-holder ul li {
-	display: block;
-	text-align: center;
+  display: block;
+  text-align: center;
 }
 
 .text-holder ul li a {
-	font-size: 16px;
-	font-weight: 600;
-	color: #4d698e;
+  font-size: 16px;
+  font-weight: 600;
+  color: #4d698e;
 }
 
 .TagsPage .text-holder {
-	display: none;
+  display: none;
 }
 
 .TagsPage .app {
-	display: none;
+  display: none;
 }
 
 .TagsPage .app2 {
-	display: none;
+  display: none;
 }
 
 .social ul li {
-	display: inline-block;
-	padding: 0 5px;
-	margin-top: 10px;
+  display: inline-block;
+  padding: 0 5px;
+  margin-top: 10px;
 }
 
 .app {
-	width: 190px;
-	padding-top: 15px;
-	padding-bottom: 5px;
-	display: block;
-	text-align: center;
-	padding-left: 15px;
+  width: 190px;
+  padding-top: 15px;
+  padding-bottom: 5px;
+  display: block;
+  text-align: center;
+  padding-left: 15px;
 }
 
 .User--directory .spinner {
-	display: none;
+  display: none;
 }
 
 @media (max-width: 767px) fieldset {
-	display: none;
+  display: none;
 }
 
 .TagTiles>li {
 	border-radius: 6px !important;
 	margin: 10px !important;
-	height: 200px !important;
+	height: 220px !important;
+	width: 37%;
+}
+@media @phone {
+	.TagTiles>li {
+		height:210px !important;
+		width: 96%;
+	}
 }
 
 .TagTiles>li:last-child {
-	display: none;
+  display: none;
 }
 
 .TagTile a {
@@ -807,7 +841,7 @@ body .Post.CommentPost {
 }
 
 .TagTile.colored .TagTile-description {
-	color: #ffffff;
+  color: #ffffff;
 }
 
 //Add tag background photos
@@ -829,27 +863,27 @@ body .Post.CommentPost {
 					background-size: 100% !important;
 					opacity: 1.3 !important;
 				}
-				
+
 				&:nth-child(4){
 					background-image: url("/background/bg_congnghe.jpg")!important;
 					background-size: 100% !important;
 				}
-				
+
 				&:nth-child(5){
 					background-image: url("/background/bg_dulich.jpg")!important;
 					background-size: 100% !important;
 				}
-				
+
 				&:nth-child(6) {
 					background-image: url("/background/bg_doisong.jpg")!important;
 					background-size: 100% !important;
 				}
-				
+
 				&:nth-child(7){
 					background-image: url("/background/bg_khoahoc.jpg")!important;
 					background-size: 100% !important;
 				}
-				
+
 				&:nth-child(8) {
 					background-image: url("/background/bg_kinhte.jpg")!important;
 					background-size: 100% !important;
@@ -866,12 +900,12 @@ body .Post.CommentPost {
 					background-image: url("/background/bg_phimhan.jpg")!important;
 					background-size: 100% !important;
 				}
-				
+
 				&:nth-child(12){
 					background-image: url("/background/bg_thoitrang.jpg")!important;
 					background-size: 100% !important;
 				}
-				
+
 				&:nth-child(13){
 					background-image: url("/background/entertainment7.png")!important;
 					background-size: 100% !important;
@@ -901,176 +935,239 @@ body .Post.CommentPost {
 	padding-left: 10px;
 	padding-right: 10px;
 }
+.TagTile-lastPostedDiscussion time {
+	display: none;
+}
 
 @media (max-width: 767px) {
-	li.item-forumStatisticsWidget {
-		display: none;
-	}
+  li.item-forumStatisticsWidget {
+    display: none;
+  }
 }
 
 @media (max-width: 600px) {
-	.OnlineUsers {
-		display: none;
-	}
+  .OnlineUsers {
+    display: none;
+  }
 }
 
 .TagsPage .OnlineUsers {
-	display: none;
+  display: none;
 }
 
 .TagsPage .ForumStatistics {
-	display: none;
+  display: none;
 }
 
 .ForumStatistics {
-	border-top: 1px solid rgba(0, 0, 0, 0.1);
-	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-	padding-bottom: 20px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 20px;
 }
 
 .OnlineUsers {
-	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-	padding-bottom: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 10px;
 }
 
 .IndexPage .DiscussionListItem-title,
 .UserPage .DiscussionListItem-title {
-	margin-right: 10px !important;
+  margin-right: 10px !important;
 }
 
 .DiscussionList:not(.DiscussionList--searchResults) .read .DiscussionListItem-title {
-	font-weight: 600;
+  font-weight: 600;
 }
 
 .DiscussionList:not(.DiscussionList--searchResults) .unread .DiscussionListItem-title {
-	font-weight: 600;
-	color: #de4b5d;
+  font-weight: 600;
+  color: #de4b5d;
 }
 
 // Chat day mode
 .chat .frame .wrapper .message-wrapper .message-block .UserMention {
-	background: #ededed !important;
+  background: #ededed !important;
 }
 
 @media (min-width: 768px) {
-	.UserPage .WhoRead-list {
-		position: absolute !important;
-		bottom: 13px !important;
-		left: 270px !important;
-	}
+  .UserPage .WhoRead-list {
+    position: absolute !important;
+    bottom: 13px !important;
+    left: 270px !important;
+  }
 }
 
 @media (min-width: 768px) {
-	.IndexPage .WhoRead-list {
-		position: absolute !important;
-		bottom: 13px !important;
-		left: 270px !important;
-	}
+  .IndexPage .WhoRead-list {
+    position: absolute !important;
+    bottom: 13px !important;
+    left: 270px !important;
+  }
 }
 
 @media (max-width: 768px) {
-	.IndexPage .WhoRead-list {
-		display: none;
-	}
+  .IndexPage .WhoRead-list {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
-	.UserPage .WhoRead-list {
-		display: none;
-	}
+  .UserPage .WhoRead-list {
+    display: none;
+  }
 }
 
 @media (max-width: 767px) {
-	.ComposerBody-header li:nth-child(n + 2):nth-child(-n + 4) {
-		display: inline-block;
-		border-bottom: 0;
-		margin-right: -15px;
-	}
+  .ComposerBody-header li:nth-child(n + 2):nth-child(-n + 4) {
+    display: inline-block;
+    border-bottom: 0;
+    margin-right: -15px;
+  }
 }
-
 
 /* +++++++++++++++++ DIM MODE LAYOUT +++++++++++++++++ */
 
 ::-webkit-scrollbar {
-	width: 7px;
+  width: 7px;
 }
 
 ::-webkit-scrollbar-track {
-	-webkit-border-radius: 10px;
-	background: fade(#000, 10%);
-	border-radius: 10px;
+  -webkit-border-radius: 10px;
+  background: fade(#000, 10%);
+  border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-	-webkit-border-radius: 10px;
-	border-radius: 10px;
-	background: fade(@primary-color, 80%);
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: fade(@primary-color, 80%);
 }
 
 ::-webkit-scrollbar-thumb:window-inactive {
-	background: fade(@primary-color, 40%);
+  background: fade(@primary-color, 40%);
 }
-
 
 /* Mobile tab animation */
 
 .mobile-app-icon-bar a {
-	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-	-webkit-user-select: none;
-	-moz-user-focus: none;
-	-moz-user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-user-select: none;
+  -moz-user-focus: none;
+  -moz-user-select: none;
 }
 
 .mobile-app-icon-bar a:focus,
 .buttonstyle:focus {
-	outline: none;
+  outline: none;
+}
+
+/* Phone buttons */
+.fa-home:before {
+	vertical-align: super;
+}
+.fa-tags:before {
+	vertical-align: super;
+}
+.fa-edit:before {
+	vertical-align: super;
+}
+.fa-user-cog:before {
+	vertical-align: super;
+}
+.fa-bell:before {
+	vertical-align: super;
+}
+.mobile-app-icon-bar {
+	.buttonstyle {
+		width: 101% !important;
+	}
+	button.buttonstyle {
+		background-position-x: center;
+		background-repeat: no-repeat;
+		vertical-align: super;
+	}
+	a:nth-child(1){
+		button.buttonstyle {
+			background-image: url('/public/Phone-button/home.png') !important;
+			background-position-y: 30%;
+			background-size: 47px;
+		}
+	}
+	a:nth-child(2){
+		button.buttonstyle {
+			background-image: url('/public/Phone-button/tags.png') !important;
+			background-position-y: 42%;
+			background-size: 44px;
+		}
+	}
+	a:nth-child(3){
+		button.buttonstyle {
+			background-image: url('/public/Phone-button/edit.png') !important;
+			background-position-y: 33%;
+			background-size: 68px;
+		}
+	}
+	a:nth-child(4){
+		button.buttonstyle {
+			background-image: url('/public/Phone-button/user-cog.png') !important;
+			background-position-y: 24%;
+			background-size: 45px;
+		}
+	}
+	a:nth-child(5){
+		button.buttonstyle {
+			background-image: url('/public/Phone-button/bell.png') !important;
+			background-position-y: 25%;
+			background-size: 54px;
+		}
+	}
 }
 
 .mobile-app-icon-bar .buttonstyle:active {
-	background: #c56a74;
-	/* Change this color to whatever your like */
+  background: #c56a74;
+  /* Change this color to whatever your like */
 }
 
 /* +++++++++++++++++ DISABLE PROFILE CLICK +++++++++++++++++*/
 
 .DiscussionListItem-author {
-	margin-left: -95px;
-	pointer-events: none;
-	margin-left: 0px;
+  margin-left: -95px;
+  pointer-events: none;
+  margin-left: 0px;
 }
 
 .DiscussionListItem-author .Avatar {
-	width: 82px;
-	height: 82px;
-	border-radius: 7px;
-	line-height: 82px;
-	object-fit: cover;
-	background-color: transparent;
+  width: 82px;
+  height: 82px;
+  border-radius: 7px;
+  line-height: 82px;
+  object-fit: cover;
+  background-color: transparent;
 }
 
 .DiscussionListItem-content {
-	padding-left: 10px;
-	margin-bottom: 10px;
-	padding-right: 50px;
-	border-top: 1px solid #eee;
+  padding-left: 10px;
+  margin-bottom: 10px;
+  padding-right: 50px;
+  border-top: 1px solid #eee;
 }
 
 .DiscussionListItem-main {
-	margin-left: -82px;
-	padding-left: 92px;
+  margin-left: -82px;
+  padding-left: 92px;
 }
 
 .NotificationList-header {
-	background-color: #de4b5d;
+  background-color: #de4b5d;
 }
 
 .NotificationList-header .App-titleControl {
-	color: white;
+  color: white;
 }
 
 .NotificationList-header .Button {
-	background-color: white !important;
-	font-size: 14px;
+  background-color: white !important;
+  font-size: 14px;
 }
 
 @media (min-width: 768px) {
@@ -1173,40 +1270,40 @@ body .Post.CommentPost {
 }
 /* +++++++++++++++++ HIDE IMAGE BUTTON +++++++++++++++++*/
 .TextEditor-toolbar .Button--icon[title="Chèn ảnh"] {
- display: none
+  display: none;
 }
 
 /* +++++++++++++++++ HIDE TAGS +++++++++++++++++*/
 
 .Dropdown-menu .item-tag21 {
-	display: none;
+  display: none;
 }
 
 .Dropdown-menu .item-tag25 {
-	display: none;
+  display: none;
 }
 
 .fa-file-upload:before {
-    content: "\f302" !important;
+  content: "\f302" !important;
 }
 /* +++++++++++++++++ HIDE SORT OPTIONS +++++++++++++++++*/
 
 .IndexPage-toolbar-view .Dropdown-menu>li:nth-child(2) {
-	display: none;
+  display: none;
 }
 
 .IndexPage-toolbar-view .Dropdown-menu>li:nth-child(4) {
-	display: none;
+  display: none;
 }
 
 .IndexPage-toolbar-view .Dropdown-menu>li:nth-child(6) {
-	display: none;
+  display: none;
 }
 
 .IndexPage-toolbar-view .Dropdown-menu>li:nth-child(7) {
-	display: none;
+  display: none;
 }
 
 .TagDescription {
-        display: none;
+  display: none;
 }

@@ -67,6 +67,10 @@ class ComposerStaticInit88ee21944a6489eec8a793ac5fe51baa
         array (
             'oe800\\Gravatar\\' => 15,
         ),
+        'l' => 
+        array (
+            'luatdolphin\\lang-vietnamese\\' => 28,
+        ),
         'a' => 
         array (
             'axy\\sourcemap\\' => 14,
@@ -155,7 +159,8 @@ class ComposerStaticInit88ee21944a6489eec8a793ac5fe51baa
         'L' => 
         array (
             'League\\OAuth2\\Client\\' => 21,
-            'League\\OAuth1\\' => 14,
+            'League\\OAuth1\\Client\\' => 21,
+            'League\\MimeTypeDetection\\' => 25,
             'League\\Flysystem\\' => 17,
             'Laminas\\ZendFrameworkBridge\\' => 28,
             'Laminas\\Stratigility\\' => 21,
@@ -281,6 +286,7 @@ class ComposerStaticInit88ee21944a6489eec8a793ac5fe51baa
             'Cron\\' => 5,
             'ClarkWinkelmann\\FollowTagsPrompt\\' => 33,
             'ClarkWinkelmann\\EmojioneArea\\' => 29,
+            'ClarkWinkelmann\\AuthorChange\\' => 29,
         ),
         'B' => 
         array (
@@ -310,6 +316,10 @@ class ComposerStaticInit88ee21944a6489eec8a793ac5fe51baa
         'oe800\\Gravatar\\' => 
         array (
             0 => __DIR__ . '/..' . '/oe800/flarum-gravatar/src',
+        ),
+        'luatdolphin\\lang-vietnamese\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/luatdolphin/lang-vietnamese/src',
         ),
         'axy\\sourcemap\\' => 
         array (
@@ -541,9 +551,13 @@ class ComposerStaticInit88ee21944a6489eec8a793ac5fe51baa
             1 => __DIR__ . '/..' . '/league/oauth2-facebook/src',
             2 => __DIR__ . '/..' . '/league/oauth2-github/src',
         ),
-        'League\\OAuth1\\' => 
+        'League\\OAuth1\\Client\\' => 
         array (
             0 => __DIR__ . '/..' . '/league/oauth1-client/src',
+        ),
+        'League\\MimeTypeDetection\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/league/mime-type-detection/src',
         ),
         'League\\Flysystem\\' => 
         array (
@@ -953,6 +967,10 @@ class ComposerStaticInit88ee21944a6489eec8a793ac5fe51baa
         array (
             0 => __DIR__ . '/..' . '/clarkwinkelmann/flarum-ext-emojionearea/src',
         ),
+        'ClarkWinkelmann\\AuthorChange\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/clarkwinkelmann/flarum-ext-author-change/src',
+        ),
         'Behat\\Transliterator\\' => 
         array (
             0 => __DIR__ . '/..' . '/behat/transliterator/src/Behat/Transliterator',
@@ -1001,6 +1019,7 @@ class ComposerStaticInit88ee21944a6489eec8a793ac5fe51baa
 
     public static $classMap = array (
         'Attribute' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
+        'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
         'JsonException' => __DIR__ . '/..' . '/symfony/polyfill-php73/Resources/stubs/JsonException.php',
         'Normalizer' => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer/Resources/stubs/Normalizer.php',
         'Pusher' => __DIR__ . '/..' . '/pusher/pusher-php-server/lib/Pusher.php',
