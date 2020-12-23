@@ -65,7 +65,7 @@ export default class DraftsList extends Component {
                                                                 draft.delete().then(() => {
                                                                     if (
                                                                         app.composer.component &&
-                                                                        app.composer.component.draft.id() ===  drafts[element].id() &&
+                                                                        app.composer.component.draft.id() ===  draft.id() &&
                                                                         !app.composer.changed()
                                                                     ) {
                                                                         app.composer.hide();
