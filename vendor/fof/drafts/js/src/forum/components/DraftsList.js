@@ -37,28 +37,14 @@ export default class DraftsList extends Component {
             <div className="NotificationList DraftsList">
                 <div className="NotificationList-header">
                     <h4 className="App-titleControl App-titleControl--text">{app.translator.trans('fof-drafts.forum.dropdown.title')}</h4>
-                </div>
-                <div className="NotificationList-content">
-                    <ul className="NotificationGroup-content">
-                        {drafts.length
-                            ? drafts
-                                  .sort((a, b) => b.updatedAt() - a.updatedAt())
-                                  .map((draft) => {
-                                      return (
-                                          <li>
-                                              <a onclick={this.showComposer.bind(this, draft)} className="Notification draft--item">
-                                                  {avatar(draft.user())}
-                                                  {icon(draft.icon(), { className: 'Notification-icon' })}
-                                                  <span className="Notification-content">
-                                                      {draft.type() === 'reply' ? draft.loadRelationships().discussion.title() : draft.title()}
-                                                  </span>
-                                                  {humanTime(draft.updatedAt())}
-                                                  {Button.component({
+                    {Button.component({
                                                       icon: 'fas fa-trash-alt',
-                                                      style: 'float: right; z-index: 20;',
-                                                      className: 'Button Button--icon Button--link draft--deleteAll draft--deleteAll',
+                                                      style: 'float: right; z-index: 20; margin-top: -25px',
+                                                      className: 'Button Button--icon Button--link draft--delete draft--delete',
                                                       title: app.translator.trans('fof-drafts.forum.dropdown.delete_button1'),
                                                       onclick: (e) => {
+                                                        this.loading = true;
+                                                        if (!window.confirm(app.translator.trans('fof-drafts.forum.dropdown.alert_vi'))) return;
                                                         var promise = [];
                                                         drafts.forEach((draft) =>
                                                             promise.push(
@@ -80,6 +66,22 @@ export default class DraftsList extends Component {
                                                           e.stopPropagation();
                                                       },
                                                   })}
+                </div>
+                <div className="NotificationList-content">
+                    <ul className="NotificationGroup-content">
+                        {drafts.length
+                            ? drafts
+                                  .sort((a, b) => b.updatedAt() - a.updatedAt())
+                                  .map((draft) => {
+                                      return (
+                                          <li>
+                                              <a onclick={this.showComposer.bind(this, draft)} className="Notification draft--item">
+                                                  {avatar(draft.user())}
+                                                  {icon(draft.icon(), { className: 'Notification-icon' })}
+                                                  <span className="Notification-content">
+                                                      {draft.type() === 'reply' ? draft.loadRelationships().discussion.title() : draft.title()}
+                                                  </span>
+                                                  {humanTime(draft.updatedAt())}
                                                   {Button.component({
                                                       icon: 'fas fa-times',
                                                       style: 'float: right; z-index: 20;',

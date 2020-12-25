@@ -503,7 +503,29 @@ function (_Component) {
       className: "NotificationList-header"
     }, m("h4", {
       className: "App-titleControl App-titleControl--text"
-    }, app.translator.trans('fof-drafts.forum.dropdown.title'))), m("div", {
+    }, app.translator.trans('fof-drafts.forum.dropdown.title')), flarum_components_Button__WEBPACK_IMPORTED_MODULE_9___default.a.component({
+      icon: 'fas fa-trash-alt',
+      style: 'float: right; z-index: 20; margin-top: -25px',
+      className: 'Button Button--icon Button--link draft--delete draft--delete',
+      title: app.translator.trans('fof-drafts.forum.dropdown.delete_button1'),
+      onclick: function onclick(e) {
+        _this.loading = true;
+        if (!window.confirm(app.translator.trans('fof-drafts.forum.dropdown.alert_vi'))) return;
+        var promise = [];
+        drafts.forEach(function (draft) {
+          return promise.push(draft["delete"]().then(function () {
+            if (app.composer.component && app.composer.component.draft.id() === draft.id() && !app.composer.changed()) {
+              app.composer.hide();
+            }
+          }));
+        });
+        Promise.all(promise).then(function () {
+          _this.loading = false;
+          m.redraw();
+        });
+        e.stopPropagation();
+      }
+    })), m("div", {
       className: "NotificationList-content"
     }, m("ul", {
       className: "NotificationGroup-content"
@@ -518,26 +540,6 @@ function (_Component) {
       }), m("span", {
         className: "Notification-content"
       }, draft.type() === 'reply' ? draft.loadRelationships().discussion.title() : draft.title()), flarum_helpers_humanTime__WEBPACK_IMPORTED_MODULE_7___default()(draft.updatedAt()), flarum_components_Button__WEBPACK_IMPORTED_MODULE_9___default.a.component({
-        icon: 'fas fa-trash-alt',
-        style: 'float: right; z-index: 20;',
-        className: 'Button Button--icon Button--link draft--deleteAll draft--deleteAll',
-        title: app.translator.trans('fof-drafts.forum.dropdown.delete_button1'),
-        onclick: function onclick(e) {
-          var promise = [];
-          drafts.forEach(function (draft) {
-            return promise.push(draft["delete"]().then(function () {
-              if (app.composer.component && app.composer.component.draft.id() === drafts[element].id() && !app.composer.changed()) {
-                app.composer.hide();
-              }
-            }));
-          });
-          Promise.all(promise).then(function () {
-            _this.loading = false;
-            m.redraw();
-          });
-          e.stopPropagation();
-        }
-      }), flarum_components_Button__WEBPACK_IMPORTED_MODULE_9___default.a.component({
         icon: 'fas fa-times',
         style: 'float: right; z-index: 20;',
         className: 'Button Button--icon Button--link draft--delete draft--delete',

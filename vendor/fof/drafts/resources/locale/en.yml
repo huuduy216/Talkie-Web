@@ -25,6 +25,7 @@ fof-drafts:
       schedule_button: Schedule Draft
       tooltip: => fof-drafts.forum.dropdown.title
       alert: Are you sure you want to delete your draft?
+      alert_vi: Bạn có chắc muốn xóa tất cả các bản nháp của mình không?
     schedule_draft_modal:
       title: Schedule Draft
       text: Schedule your draft to automatically post at a later time!
