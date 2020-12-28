@@ -21,11 +21,11 @@ fof-drafts:
       empty_text: You haven't saved any drafts
       title: Drafts
       delete_button: Delete Draft
-      deleteAll_button: Delete All Drafts
+      delete_all_button: Delete All Drafts
       schedule_button: Schedule Draft
       tooltip: => fof-drafts.forum.dropdown.title
       alert: Are you sure you want to delete your draft?
-      deleteAll_alert: Are you sure you want to delete all your drafts?
+      delete_all_alert: Are you sure you want to delete all your drafts?
     schedule_draft_modal:
       title: Schedule Draft
       text: Schedule your draft to automatically post at a later time!
