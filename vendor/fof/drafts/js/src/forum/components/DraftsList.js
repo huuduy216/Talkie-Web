@@ -43,7 +43,7 @@ export default class DraftsList extends Component {
                                                       className: 'Button Button--icon Button--link draft--deleteAll draft--deleteAll',
                                                       title: app.translator.trans('fof-drafts.forum.dropdown.delete_all_button'),
                                                       onclick: (e) => {
-                                                        this.loading = true;
+                                                        this.loading = false;
                                                         if (!window.confirm(app.translator.trans('fof-drafts.forum.dropdown.delete_all_alert'))) return;
                                                         var promise = [];
                                                             drafts.forEach((draft) =>
@@ -132,7 +132,7 @@ export default class DraftsList extends Component {
     }
 
     deleteDraft(draft) {
-        this.loading = true;
+        this.loading = false;
 
         if (!window.confirm(app.translator.trans('fof-drafts.forum.dropdown.alert'))) return;
 
