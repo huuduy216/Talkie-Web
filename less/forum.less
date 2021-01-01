@@ -353,6 +353,18 @@ body when (@config-dark-mode =true) {
 	.chat .frame #chat-header {
 		background-color: #1b2028 !important;
 	}
+	.App {
+		background: #15202b !important;
+	}
+	.TagsPage {
+		.sideNavOffset {
+			.rankings-loadmore {
+				.Button {
+					background-image: url(/public/button/button-dark.png)!important;
+				}
+			}
+		}
+	}
 }
 
 
@@ -1306,4 +1318,106 @@ body .Post.CommentPost {
 
 .TagDescription {
   display: none;
+}
+.TagsPage {
+	.sideNavOffset {
+		.rankings-loadmore {
+			text-align: center !important;
+			height: 20px;
+			.Button {
+				background-image: url(/public/button/button-light.png)!important;
+				background-size: 30%;
+				background-repeat: no-repeat;
+				background-position: center;
+				background-color: transparent !important;
+				border-radius: 0px !important;
+				animation: nib1 1s  linear 0.3s infinite;
+				.Button-label {
+					opacity: 0;
+				}
+			}
+		}
+	}
+}
+@media (min-width: 768px){
+	.TagsPage {
+		.sideNavOffset{
+			white-space: none !important;
+			float: left;
+			width: 72%;
+			.rankings-loadmore{
+				padding-left: 35px;
+			}
+		}
+	}
+	.TagsPage {
+		.sideNav {
+			float: left;
+			width: 21%;
+			white-space: initial !important;
+			overflow: hidden !important;
+		}
+	}
+	.Dropdown-menu{
+		.item-tag25{
+			display: none !important;
+		}
+		.item-tag21{
+			display: none !important;
+		}
+	}
+}
+@media (min-width: 991px) {
+	.TagsPage {
+		.sideNavOffset {
+			.rankings-loadmore {
+				padding-left: unset;
+				padding-right: 5%;
+			}
+		}
+	}
+}
+@media (min-width: 1366px) {
+	.TagsPage {
+		.sideNavOffset {
+			.rankings-loadmore {
+				padding-left: unset;
+				padding-right: 8%;
+			}
+		}
+	}
+}
+@media (min-width: 768px) and (max-width: 990px){
+	.TagsPage {
+		.sideNavOffset {
+			.rankings-loadmore {
+				padding-left: 10%;
+				padding-right: 0%;
+			}
+		}
+	}
+	.sideNav:after{
+		border-bottom: none !important;
+	}
+}
+@media @phone {
+	.TagsPage {
+		.sideNavOffset {
+			.rankings-loadmore {
+				padding: unset;
+			}
+		}
+	}
+}
+
+@keyframes nib1 {
+	0% {
+		padding-top: 15px;
+	}
+	50% {
+		padding-top: 25px;
+	}
+	100% {
+		padding-top: 15px;
+	}
 }
