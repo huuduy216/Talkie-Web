@@ -34,7 +34,7 @@ trait PWATrait
             'theme_color'      => $this->settings->get('theme_primary_color'),
             'background_color' => $this->settings->get('askvortsov-pwa.backgroundColor', '#ffffff'),
             'display'          => 'standalone',
-            'orientation'      => 'any',
+            'orientation'      => 'auto',    
             'icons'            => [],
         ];
 
