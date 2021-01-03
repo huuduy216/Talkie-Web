@@ -43,8 +43,11 @@ export default class DraftsList extends Component {
                                                       className: 'Button Button--icon Button--link draft--deleteAll draft--deleteAll',
                                                       title: app.translator.trans('fof-drafts.forum.dropdown.delete_all_button'),
                                                       onclick: (e) => {
-                                                        this.loading = false;
-                                                        if (!window.confirm(app.translator.trans('fof-drafts.forum.dropdown.delete_all_alert'))) return;
+                                                        this.loading = true;
+                                                        if (!window.confirm(app.translator.trans('fof-drafts.forum.dropdown.delete_all_alert'))){
+                                                            this.loading = false;
+                                                            return;
+                                                        } 
                                                         var promise = [];
                                                             drafts.forEach((draft) =>
                                                                 promise.push(
@@ -59,9 +62,9 @@ export default class DraftsList extends Component {
                                                                     })
                                                                 )
                                                             );
-                                                            Promise.all(promise).then(() => {
-                                                                this.loading = false;
+                                                            Promise.all(promise).then(() => {                                                             
                                                                 m.redraw();
+                                                                this.loading = false;
                                                             });
                                                           e.stopPropagation();
                                                       },
@@ -132,17 +135,21 @@ export default class DraftsList extends Component {
     }
 
     deleteDraft(draft) {
-        this.loading = false;
+        this.loading = true;
 
-        if (!window.confirm(app.translator.trans('fof-drafts.forum.dropdown.alert'))) return;
+        if (!window.confirm(app.translator.trans('fof-drafts.forum.dropdown.delete_all_alert'))){
+            this.loading = false;
+            return;
+        } 
 
         draft.delete().then(() => {
             if (app.composer.component && app.composer.component.draft.id() === draft.id() && !app.composer.changed()) {
                 app.composer.hide();
             }
 
-            this.loading = false;
+           
             m.redraw();
+            this.loading = false;
         });
     }
 
