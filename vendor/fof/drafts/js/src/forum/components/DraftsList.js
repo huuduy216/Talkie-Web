@@ -62,9 +62,10 @@ export default class DraftsList extends Component {
                                                                     })
                                                                 )
                                                             );
-                                                            Promise.all(promise).then(() => {                                                             
+                                                            Promise.all(promise).then(() => {
+                                                                this.loading = false;                                                             
                                                                 m.redraw();
-                                                                this.loading = false;
+                                                                
                                                             });
                                                           e.stopPropagation();
                                                       },
@@ -146,10 +147,8 @@ export default class DraftsList extends Component {
             if (app.composer.component && app.composer.component.draft.id() === draft.id() && !app.composer.changed()) {
                 app.composer.hide();
             }
-
-           
-            m.redraw();
             this.loading = false;
+            m.redraw();
         });
     }
 
