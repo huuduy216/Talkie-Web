@@ -139,7 +139,7 @@ export default class DraftsList extends Component {
     deleteDraft(draft) {
         this.loading = true;
 
-        if (!window.confirm(app.translator.trans('fof-drafts.forum.dropdown.delete_all_alert'))){
+        if (!window.confirm(app.translator.trans('fof-drafts.forum.dropdown.alert'))){
             this.loading = false;
             return;
         } 
