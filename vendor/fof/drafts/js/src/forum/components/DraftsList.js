@@ -39,7 +39,7 @@ export default class DraftsList extends Component {
                     <h4 className="App-titleControl App-titleControl--text">{app.translator.trans('fof-drafts.forum.dropdown.title')}</h4>
                     {Button.component({
                                                       icon: 'fas fa-trash-alt',
-                                                      style: 'float: right; z-index: 20; margin-top: -25px',
+                                                      style: 'float: right; z-index: 20; margin-top: -1.5rem',
                                                       className: 'Button Button--icon Button--link draft--deleteAll draft--deleteAll',
                                                       title: app.translator.trans('fof-drafts.forum.dropdown.delete_all_button'),
                                                       onclick: (e) => {
