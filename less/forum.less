@@ -1521,8 +1521,18 @@ body .Post.CommentPost {
 	}
 }
 .App-primaryControl{
-	.Button-icon{
+	.fa-edit{
 		-webkit-animation: vertical 4s ease infinite;
 		animation: vertical 4s ease infinite;
 	}
 }
+@media (max-width: 767px) {
+	.Header-controls {
+	  .item-logIn{
+		  margin-top: 4px;
+		  .Button--link{
+			padding: 4px 9px 0px 9px !important;
+		  }
+	  }
+	}
+  }
