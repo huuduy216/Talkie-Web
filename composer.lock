@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2d314ded943915fe5d863f5069e2bb2b",
+    "content-hash": "33ea70aff26bf0d62679ba779449f155",
     "packages": [
         {
             "name": "antoinefr/flarum-ext-money",
@@ -11560,6 +11560,37 @@
             "time": "2020-10-24T10:57:07+00:00"
         },
         {
+            "name": "talkie-extension/translate",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "vendor/talkie-extension/translate",
+                "reference": "d3f0e2411e6aad636425deaacb5f37250493a35a"
+            },
+            "require": {
+                "flarum/core": ">=0.1.0-beta.12 <0.1.0-beta.14"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-extension": {
+                    "title": "Talkie translate",
+                    "icon": {
+                        "name": "fas fa-language",
+                        "backgroundColor": "red",
+                        "color": "#fff"
+                    }
+                },
+                "flarum-locale": {
+                    "code": "vi",
+                    "title": "Vietnamese"
+                }
+            },
+            "description": "Talkie tranlate extension",
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
             "name": "therealsujitk/flarum-ext-show-password",
             "version": "v1.1.0",
             "source": {
@@ -12620,8 +12651,9 @@
     "minimum-stability": "beta",
     "stability-flags": {
         "flarum/mentions": 10,
+        "joseph280996/alwaysdisplaydiscussionlist": 20,
         "luatdolphin/lang-vietnamese": 10,
-        "joseph280996/alwaysdisplaydiscussionlist": 20
+        "talkie-extension/translate": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

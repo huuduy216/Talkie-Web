@@ -11542,6 +11542,40 @@
             "install-path": "../symfony/yaml"
         },
         {
+            "name": "talkie-extension/translate",
+            "version": "dev-master",
+            "version_normalized": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "vendor/talkie-extension/translate",
+                "reference": "d3f0e2411e6aad636425deaacb5f37250493a35a"
+            },
+            "require": {
+                "flarum/core": ">=0.1.0-beta.12 <0.1.0-beta.14"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-extension": {
+                    "title": "Talkie translate",
+                    "icon": {
+                        "name": "fas fa-language",
+                        "backgroundColor": "red",
+                        "color": "#fff"
+                    }
+                },
+                "flarum-locale": {
+                    "code": "vi",
+                    "title": "Vietnamese"
+                }
+            },
+            "installation-source": "dist",
+            "description": "Talkie tranlate extension",
+            "transport-options": {
+                "relative": true
+            },
+            "install-path": "../talkie-extension/translate"
+        },
+        {
             "name": "therealsujitk/flarum-ext-show-password",
             "version": "v1.1.0",
             "version_normalized": "1.1.0.0",
@@ -12603,5 +12637,6 @@
             "install-path": "../zerosonesfun/hashtags"
         }
     ],
-    "dev": true
+    "dev": true,
+    "dev-package-names": []
 }
