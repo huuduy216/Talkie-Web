@@ -1421,3 +1421,147 @@ body .Post.CommentPost {
 		padding-top: 15px;
 	}
 }
+.Header-controls{
+	.Button--link:hover{
+	  fill: #ffffff !important;
+	}
+	.item-signUp{
+	  margin-right: 5px;
+	  .Button--link{
+		width: 75px;
+		padding: 8px 2px 0px 10px !important;
+		border: solid 1px  #de4b5d;
+	  }
+	}
+	.item-logIn{
+	  .Button--link{
+		width: 87px;
+		padding: 7px 9px 0px 9px !important;
+		border: solid 1px  #de4b5d;
+	  }
+	}
+	g text {
+	  transform: translateY(2px);
+	  }
+	  #Frame1 text {
+	  animation-name: wiggleWiggle;
+	  animation-duration: 6s;
+	  animation-iteration-count: infinite;
+	  }
+	  #Frame2 text {
+	  animation-name: wiggleWiggle;
+	  animation-duration: 6s;
+	  animation-iteration-count: infinite;
+	  }
+	  
+	  @keyframes wiggleWiggle {
+	  20%,
+	  100% {
+		transform: translate(0, 2px);
+	  }
+	  0% {
+		transform: translate(0, 0px);
+		fill: #de4b5d;
+	  }
+	  10% {
+		transform: translate(0, 2px);
+	  }
+	}
+	  
+	#dd {
+	animation-delay: 1s;
+	}
+	
+	#aw {
+	animation-delay: 1.1s;
+	}
+	
+	#n {
+	animation-delay: 1.2s;
+	}
+	
+	#g {
+	animation-delay: 1.3s;
+	}
+	
+	#k {
+	animation-delay: 1.4s;
+	}
+	
+	#ys {
+	animation-delay: 1.5s;
+	}
+	#dd_2 {
+	animation-delay: 1.7s;
+	}
+	#aw_2 {
+	animation-delay: 1.8s;
+	}
+	#n_2 {
+	animation-delay: 1.9s;
+	}
+	#g_2 {
+	animation-delay: 2.0s;
+	}
+	#n_3 {
+	animation-delay: 2.1s;
+	}
+	#h {
+	animation-delay: 2.2s;
+	}
+	#aaj {
+	animation-delay: 2.3s;
+	}
+	#p {
+	animation-delay: 2.4s;
+	}
+}
+@keyframes vertical {
+	4% {
+		-webkit-transform: translate(0,-2.5px);
+		-ms-transform: translate(0,-2.5px);
+		transform: translate(0,-2.5px);
+	}
+
+	8% {
+		-webkit-transform: translate(0,2.5px);
+		-ms-transform: translate(0,2.5px);
+		transform: translate(0,2.5px);
+	}
+
+	12% {
+		-webkit-transform: translate(0,-2.5px);
+		-ms-transform: translate(0,-2.5px);
+		transform: translate(0,-2.5px);
+	}
+
+	16% {
+		-webkit-transform: translate(0,2.5px);
+		-ms-transform: translate(0,2.5px);
+		transform: translate(0,2.5px);
+	}
+
+	20% {
+		-webkit-transform: translate(0,-2.5px);
+		-ms-transform: translate(0,-2.5px);
+		transform: translate(0,-2.5px);
+		}
+
+	24% {
+		-webkit-transform: translate(0,2.5px);
+		-ms-transform: translate(0,2.5px);
+		transform: translate(0,2.5px);
+		}
+
+	26% {
+		-webkit-transform: translate(0,0);
+		-ms-transform: translate(0,0);
+		transform: translate(0,0);
+	}
+}
+.App-primaryControl{
+	.Button-icon{
+		-webkit-animation: vertical 4s ease infinite;
+		animation: vertical 4s ease infinite;
+	}
+}
