@@ -1811,7 +1811,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => 'd3f0e2411e6aad636425deaacb5f37250493a35a',
+      'reference' => '80796865c7a2ceba07d1d1c73fe45124976b5eca',
     ),
     'therealsujitk/flarum-ext-show-password' => 
     array (

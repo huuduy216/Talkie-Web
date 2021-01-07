@@ -1,2 +1,7 @@
 <?php
-return new Flarum\Extend\LanguagePack;
+use Flarum\Extend;
+
+return [
+	new Extend\Locales(__DIR__.'/locale'),
+
+];
