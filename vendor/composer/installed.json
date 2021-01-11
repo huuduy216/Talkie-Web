@@ -11543,8 +11543,8 @@
         },
         {
             "name": "talkie-extension/translate",
-            "version": "dev-master",
-            "version_normalized": "dev-master",
+            "version": "dev-TAL-85_Translate_Extension",
+            "version_normalized": "dev-TAL-85_Translate_Extension",
             "dist": {
                 "type": "path",
                 "url": "vendor/talkie-extension/translate",

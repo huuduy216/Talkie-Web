@@ -1,7 +1,0 @@
-fof-drafts:
-  forum:
-    dropdown:
-      empty_text: You haven't saved any drafts
-      title: Drafts
-      delete_button: Delete Draft
-      delete_all_alert: Are you sure you want to delete all your drafts?

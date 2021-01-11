@@ -24,12 +24,12 @@ class InstalledVersions
 private static $installed = array (
   'root' => 
   array (
-    'pretty_version' => '1.0.0+no-version-set',
-    'version' => '1.0.0.0',
+    'pretty_version' => 'dev-master',
+    'version' => 'dev-master',
     'aliases' => 
     array (
     ),
-    'reference' => NULL,
+    'reference' => 'ed694adce7373c1d9e142164881c4e96a99c29f3',
     'name' => 'flarum/flarum',
   ),
   'versions' => 
@@ -414,12 +414,12 @@ private static $installed = array (
     ),
     'flarum/flarum' => 
     array (
-      'pretty_version' => '1.0.0+no-version-set',
-      'version' => '1.0.0.0',
+      'pretty_version' => 'dev-master',
+      'version' => 'dev-master',
       'aliases' => 
       array (
       ),
-      'reference' => NULL,
+      'reference' => 'ed694adce7373c1d9e142164881c4e96a99c29f3',
     ),
     'flarum/lang-english' => 
     array (
@@ -1829,8 +1829,8 @@ private static $installed = array (
     ),
     'talkie-extension/translate' => 
     array (
-      'pretty_version' => 'dev-master',
-      'version' => 'dev-master',
+      'pretty_version' => 'dev-TAL-85_Translate_Extension',
+      'version' => 'dev-TAL-85_Translate_Extension',
       'aliases' => 
       array (
       ),
