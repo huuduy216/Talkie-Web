@@ -1,0 +1,60 @@
+fof-terms:
+    forum:
+        state-modal:
+            title: Điều khoản sử dụng của tài khoản {username}
+            # Terms accept state for user
+            accepted-at: Đã chấp nhận ngày {date}.
+            # Accepted
+            not-accepted: Chưa được chấp nhận.
+            # Not accepted
+
+        update-alert:
+            must-accept-message: Chúng tôi đã tạm thời hạn chế quyền truy cập vào tài khoản của bạn trong khi bạn kiểm tra các điều khoản mới.
+            # We've temporarily restricted access to your account while you check out the new terms
+            can-accept-message: Gần đây chúng tôi đã cập nhật các điều khoản. Vui lòng chấp nhận để tiếp tục sử dụng trang web này.
+            # We recently updated the terms. You must accept them to continue using this website
+            review: Nhấn vào đây để xem xét và chấp nhận các điều khoản mới.
+            # Click here to review and accept the new terms
+
+        user_controls:
+            state_button: Điều khoản sử dụng
+            # Term accept state
+
+sycho-profile-cover:
+  forum:
+    cover: Ảnh bìa
+    # Cover
+    edit_cover: Chỉnh sửa ảnh bìa
+    # Edit cover
+    notice: "Dung lượng tối đa: {size}"
+    # Maximum size
+    added:
+      success: Thay đổi ảnh bìa thành công.
+    #   Profile cover updated
+      error: Không thể tải ảnh lên.
+    #   Image could not be uploaded
+    removed:
+      success: Đã gỡ ảnh bìa.
+    #   Profile cover removed.
+      error: Không thể gỡ ảnh bìa, vui lòng thử lại.
+      #   Could not remove cover, try again later.
+
+simonxeko-follow-users:
+  forum:
+    profile_link: Đang theo dõi
+    # Followed
+    user_controls:
+      follow_button: Theo dõi
+    # Follow
+      follow_confirmation: Bạn có muốn theo dõi người dùng này?
+    # Are you sure to follow this user?
+      unfollow_button: Hủy theo dõi
+    # Unfollow
+      unfollow_confirmation: Bạn muốn hủy theo dõi người dùng này?
+    # Are you sure to unfollow this user?
+
+    settings:
+      notify_new_discussion_label: Ai đó bạn theo dõi tạo cuộc thảo luận.
+    # Someone I'm following creates a discussion
+      notify_new_post_label: Ai đó bạn theo dõi đăng câu trả lời.
+    # Someone I'm following posts a reply
