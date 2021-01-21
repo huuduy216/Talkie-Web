@@ -37,6 +37,39 @@ export default class DraftsList extends Component {
             <div className="NotificationList DraftsList">
                 <div className="NotificationList-header">
                     <h4 className="App-titleControl App-titleControl--text">{app.translator.trans('fof-drafts.forum.dropdown.title')}</h4>
+                    {Button.component({
+                                                      icon: 'fas fa-trash-alt',
+                                                      style: 'float: right; z-index: 20; margin-top: -1.5rem',
+                                                      className: 'Button Button--icon Button--link draft--deleteAll draft--deleteAll',
+                                                      title: app.translator.trans('fof-drafts.forum.dropdown.delete_all_button'),
+                                                      onclick: (e) => {
+                                                        this.loading = true;
+                                                        if (!window.confirm(app.translator.trans('fof-drafts.forum.dropdown.delete_all_alert'))){
+                                                            this.loading = false;
+                                                            return;
+                                                        } 
+                                                        const promise = [];
+                                                            drafts.forEach((draft) =>
+                                                                promise.push(
+                                                                    draft.delete().then(() => {
+                                                                        if (
+                                                                            app.composer.component &&
+                                                                            app.composer.component.draft.id() ===  drafts[element].id() &&
+                                                                            !app.composer.changed()
+                                                                        ) {
+                                                                            app.composer.hide();
+                                                                       }
+                                                                    })
+                                                                )
+                                                            );
+                                                            Promise.all(promise).then(() => {
+                                                                this.loading = false;                                                             
+                                                                m.redraw();
+
+                                                            });
+                                                          e.stopPropagation();
+                                                      },
+                                                  })}
                 </div>
                 <div className="NotificationList-content">
                     <ul className="NotificationGroup-content">
@@ -105,7 +138,10 @@ export default class DraftsList extends Component {
     deleteDraft(draft) {
         this.loading = true;
 
-        if (!window.confirm(app.translator.trans('fof-drafts.forum.dropdown.alert'))) return;
+        if (!window.confirm(app.translator.trans('fof-drafts.forum.dropdown.alert'))) {
+            this.loading = false;
+            return;
+        }
 
         draft.delete().then(() => {
             if (app.composer.component && app.composer.component.draft.id() === draft.id() && !app.composer.changed()) {
