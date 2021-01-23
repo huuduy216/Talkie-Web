@@ -115,6 +115,7 @@
         "therealsujitk/flarum-ext-show-password": "^1.0",
         "v17development/flarum-seo": "^1.1",
         "zerosonesfun/hashtags": "^2.1",
+        "joseph280996/alwaysdisplaydiscussionlist": "*@dev",
         "talkie-extension/translate": "*@dev"
     },
     "config": {
@@ -126,7 +127,7 @@
     "repositories": {
         "0": {
             "type": "path",
-            "url": "vendor/talkie-extension/*"
+            "url": "workbench/*"
         }
     }
 }
