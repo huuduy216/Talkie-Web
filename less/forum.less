@@ -369,6 +369,13 @@ body when (@config-dark-mode =true) {
 			}
 		}
 	}
+	.container {
+		.ButtonGroup {
+			.Dropdown-toggle {
+				background-color: #15202b;
+			}
+		}
+	}
 }
 
 
@@ -741,8 +748,12 @@ body .Post.CommentPost {
 }
 
 .UserCard .Button {
-  color: #667c99;
-  background: rgba(0, 0, 0, 0.1);
+	color: #ffffff;
+	background: rgba(0, 0, 0, 0.1);
+}
+  
+.UserCard .Button:hover {
+	font-weight: 500;
 }
 
 .UserDirectoryList .UserCard--directory {
