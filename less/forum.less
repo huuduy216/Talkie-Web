@@ -71,6 +71,20 @@ body when (@config-dark-mode =true) {
 			}
 		}
 	}
+	.ChooseTagsToFollowModal {
+		tr{
+			td.TagName {
+				border-top: 0.1px solid #1e2d3c;
+				border-left: 0.1px solid #1e2d3c;
+				border-bottom: 0.1px solid #1e2d3c;
+			}
+			td.TagFollow {
+				border-top: 0.1px solid #1e2d3c;
+				border-right: 0.1px solid #1e2d3c;
+				border-bottom: 0.1px solid #1e2d3c;
+			}
+		}	
+	}
 	.Header-logo {
 		position: relative;
 		z-index: -1;
@@ -959,6 +973,50 @@ body .Post.CommentPost {
 }
 .TagTile-lastPostedDiscussion time {
 	display: none;
+}
+
+.ChooseTagsToFollowModal {
+	tr{
+		&:nth-child(7) {
+			td.TagName {
+				padding-left: 50px;
+				border-top: hidden;
+				border-bottom: hidden;
+			}
+		}
+		&:nth-child(8) {
+			td.TagName {
+				padding-left: 50px;
+				border-bottom: hidden;
+			}
+		}
+		&:nth-child(9) {
+			td.TagName {
+				padding-left: 50px;
+			}
+		}
+		td.TagName {
+			border-top: 0.1px solid #ccdcd5;
+			border-left: 0.1px solid #ccdcd5;
+			border-bottom: 0.1px solid #ccdcd5;
+		}
+		&:nth-child(7) {
+			td.TagFollow {
+				border-top: hidden;
+				border-bottom: hidden;
+			}
+		}
+		&:nth-child(8) {
+			td.TagFollow {
+				border-bottom: hidden;
+			}
+		}
+		td.TagFollow {
+			border-top: 0.1px solid #ccdcd5;
+			border-right: 0.1px solid #ccdcd5;
+			border-bottom: 0.1px solid #ccdcd5;
+		}
+	}	
 }
 
 @media (max-width: 767px) {
