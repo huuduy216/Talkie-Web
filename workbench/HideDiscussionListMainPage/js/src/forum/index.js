@@ -2,7 +2,7 @@ import app from "flarum/app";
 import { extend } from "flarum/extend";
 import HeaderPrimary from "flarum/components/HeaderPrimary";
 
-app.initializers.add("joseph-always-show-suggestion", function () {
+app.initializers.add("always-show-suggestion", function () {
   extend(HeaderPrimary.prototype, "config", function (isInitialized, context) {
     if (isInitialized) return;
     const contentContainer = document.getElementsByClassName("App-content")[0];
