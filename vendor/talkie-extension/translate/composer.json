@@ -1,0 +1,22 @@
+{
+    "name": "talkie-extension/translate",
+    "description": "Talkie Translate",
+    "type": "flarum-extension",
+    "require": {
+        "flarum/core": ">=0.1.0-beta.12 <0.1.0-beta.14"
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "Talkie translate extension",
+            "icon": {
+                "name": "fas fa-language",
+                "backgroundColor": "blue",
+                "color": "#fff"
+            }
+        },
+        "flarum-locale": { 
+            "code": "vi", 
+            "title": "Vietnamese" 
+        } 
+    }
+}

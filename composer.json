@@ -97,6 +97,7 @@
         "fof/upload": "^0.10.0",
         "itnt/flarum-uitab": "^0.2.0",
         "jordanjay29/flarum-ext-summaries": "^0.3.1",
+        "joseph280996/alwaysdisplaydiscussionlist": "*@dev",
         "kvothe/keyboard-shortcuts": "^0.1.0",
         "kyrne/shout": "^0.2.3",
         "luatdolphin/lang-vietnamese": "^0.1.0@beta",
@@ -114,7 +115,8 @@
         "therealsujitk/flarum-ext-show-password": "^1.0",
         "v17development/flarum-seo": "^1.1",
         "zerosonesfun/hashtags": "^2.1",
-        "joseph280996/alwaysdisplaydiscussionlist": "*@dev"
+        "joseph280996/alwaysdisplaydiscussionlist": "*@dev",
+        "talkie-extension/translate": "*@dev"
     },
     "config": {
         "preferred-install": "dist",

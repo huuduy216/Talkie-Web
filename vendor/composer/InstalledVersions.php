@@ -1,5 +1,15 @@
 <?php
 
+
+
+
+
+
+
+
+
+
+
 namespace Composer;
 
 use Composer\Semver\VersionParser;
@@ -19,7 +29,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => '7dd35453dd0ae42fe1f0507fc10ed85f67f6abe4',
+    'reference' => 'ed694adce7373c1d9e142164881c4e96a99c29f3',
     'name' => 'flarum/flarum',
   ),
   'versions' => 
@@ -409,7 +419,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => '7dd35453dd0ae42fe1f0507fc10ed85f67f6abe4',
+      'reference' => 'ed694adce7373c1d9e142164881c4e96a99c29f3',
     ),
     'flarum/lang-english' => 
     array (
@@ -1816,6 +1826,15 @@ private static $installed = array (
       array (
       ),
       'reference' => '88289caa3c166321883f67fe5130188ebbb47094',
+    ),
+    'talkie-extension/translate' => 
+    array (
+      'pretty_version' => 'dev-TAL-85_Translate_Extension',
+      'version' => 'dev-TAL-85_Translate_Extension',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '80796865c7a2ceba07d1d1c73fe45124976b5eca',
     ),
     'therealsujitk/flarum-ext-show-password' => 
     array (
