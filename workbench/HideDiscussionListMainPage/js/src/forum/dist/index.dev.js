@@ -12,8 +12,12 @@ _app["default"].initializers.add("always-show-suggestion", function () {
   (0, _extend.extend)(_HeaderPrimary["default"].prototype, "config", function (isInitialized, context) {
     if (isInitialized) return;
     var contentContainer = document.getElementsByClassName("App-content")[0];
+    var possibleDevRoute = ["/", "/public/", "/flarum/public/"];
+    var currentPath = window.location.pathname;
 
-    if (window.location.pathname === "/" || window.location.pathname.includes("public/")) {
+    if (possibleDevRoute.some(function (route) {
+      return currentPath === route;
+    })) {
       contentContainer.classList.add("mr-0");
     } else {
       contentContainer.classList.remove("mr-0");
