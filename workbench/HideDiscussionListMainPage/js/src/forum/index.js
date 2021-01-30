@@ -15,5 +15,8 @@ app.initializers.add("always-show-suggestion", function () {
     } else {
       contentContainer.classList.remove("mr-0");
     }
+    if (!app.cache.discussionList) {
+      contentContainer.classList.add("mr-0");
+    }
   });
 });
