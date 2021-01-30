@@ -97,6 +97,7 @@
         "fof/upload": "^0.10.0",
         "itnt/flarum-uitab": "^0.2.0",
         "jordanjay29/flarum-ext-summaries": "^0.3.1",
+        "joseph280996/alwaysdisplaydiscussionlist": "*@dev",
         "kvothe/keyboard-shortcuts": "^0.1.0",
         "kyrne/shout": "^0.2.3",
         "luatdolphin/lang-vietnamese": "^0.1.0@beta",
@@ -111,10 +112,10 @@
         "simonxeko/follow-users": "^0.3.5",
         "simonxeko/preview-discussion": "^0.1.0",
         "sycho/flarum-profile-cover": "^1.1",
+        "talkie-extension/mobile-tags": "*@dev",
         "therealsujitk/flarum-ext-show-password": "^1.0",
         "v17development/flarum-seo": "^1.1",
-        "zerosonesfun/hashtags": "^2.1",
-        "joseph280996/alwaysdisplaydiscussionlist": "*@dev"
+        "zerosonesfun/hashtags": "^2.1"
     },
     "config": {
         "preferred-install": "dist",
