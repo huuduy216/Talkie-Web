@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2d314ded943915fe5d863f5069e2bb2b",
+    "content-hash": "853798f6412238c179dd7eb587025645",
     "packages": [
         {
             "name": "antoinefr/flarum-ext-money",
@@ -11560,6 +11560,33 @@
             "time": "2020-10-24T10:57:07+00:00"
         },
         {
+            "name": "talkie-extension/mobile-tags",
+            "version": "dev-TAL-75_Tag_title",
+            "dist": {
+                "type": "path",
+                "url": "workbench/mobile-tags",
+                "reference": "231cc3d47e378244cada2707de3514b5b0ed65d8"
+            },
+            "require": {
+                "flarum/core": ">=0.1.0-beta.12 <0.1.0-beta.14"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-extension": {
+                    "title": "Mobile tags",
+                    "icon": {
+                        "name": "fa fa-mobile",
+                        "backgroundColor": "#ffa500",
+                        "color": "#fff"
+                    }
+                }
+            },
+            "description": "Scale tags on mobile screen",
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
             "name": "therealsujitk/flarum-ext-show-password",
             "version": "v1.1.0",
             "source": {
@@ -12620,8 +12647,9 @@
     "minimum-stability": "beta",
     "stability-flags": {
         "flarum/mentions": 10,
+        "joseph280996/alwaysdisplaydiscussionlist": 20,
         "luatdolphin/lang-vietnamese": 10,
-        "joseph280996/alwaysdisplaydiscussionlist": 20
+        "talkie-extension/mobile-tags": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

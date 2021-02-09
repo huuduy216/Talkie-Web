@@ -1,0 +1,39 @@
+@media (max-width: 767px){
+    .item-tags{
+        overflow: hidden ;
+        text-overflow: ellipsis ;
+        white-space: nowrap ;
+        border-radius: @border-radius;
+        background: rgb(168, 147, 147); 
+        color :white; 
+        width: 130px !important;
+        .TagLabel{
+          padding-top: 2.5px ;
+        } 
+    }
+    .item-tags-single{
+      background-color: rgb(255, 255, 255) ;  
+    }
+    .item-tags-double{
+      background-color: rgb(255, 255, 255) ;  
+    }
+    body when (@config-dark-mode =true)  {
+      .item-tags-single{
+        background-color:#15202b ;  
+      }
+      .DiscussionListItem-content:hover{
+        .item-tags-single{
+        background-color: #21303d ;  
+        }
+      }
+      .item-tags-double{
+        background-color :#15202b ;  
+      }
+      .DiscussionListItem-content:hover{
+        .item-tags-double{
+        background-color :#21303d ;  
+        }
+      }
+    }
+  }
+  
